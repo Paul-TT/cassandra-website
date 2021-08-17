@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/operating/security.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/operating/security.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/operating/security.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -781,7 +820,7 @@ is crucial to configuring your cluster to meet your security needs.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="tlsssl-encryption"><a class="anchor" href="#tlsssl-encryption"></a><a class="link" href="#tlsssl-encryption">TLS/SSL Encryption</a></h2>
+<h2 id="tlsssl-encryption"><a class="anchor" href="#tlsssl-encryption"></a>TLS/SSL Encryption</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Cassandra provides secure communication between a client machine and a
@@ -813,7 +852,7 @@ documentation on creating keystores</a></p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="ssl-certificate-hot-reloading"><a class="anchor" href="#ssl-certificate-hot-reloading"></a><a class="link" href="#ssl-certificate-hot-reloading">SSL Certificate Hot Reloading</a></h2>
+<h2 id="ssl-certificate-hot-reloading"><a class="anchor" href="#ssl-certificate-hot-reloading"></a>SSL Certificate Hot Reloading</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Beginning with Cassandra 4, Cassandra supports hot reloading of SSL
@@ -830,7 +869,7 @@ passwords. The default polling interval is 10 minutes.</p>
 immediately notice the changed certificates.</p>
 </div>
 <div class="sect2">
-<h3 id="inter-node-encryption"><a class="anchor" href="#inter-node-encryption"></a><a class="link" href="#inter-node-encryption">Inter-node Encryption</a></h3>
+<h3 id="inter-node-encryption"><a class="anchor" href="#inter-node-encryption"></a>Inter-node Encryption</h3>
 <div class="paragraph">
 <p>The settings for managing inter-node encryption are found in
 <code>cassandra.yaml</code> in the <code>server_encryption_options</code> section. To enable
@@ -839,7 +878,7 @@ its default value of <code>none</code> to one value from: <code>rack</code>, <co
 </div>
 </div>
 <div class="sect2">
-<h3 id="client-to-node-encryption"><a class="anchor" href="#client-to-node-encryption"></a><a class="link" href="#client-to-node-encryption">Client to Node Encryption</a></h3>
+<h3 id="client-to-node-encryption"><a class="anchor" href="#client-to-node-encryption"></a>Client to Node Encryption</h3>
 <div class="paragraph">
 <p>The settings for managing client to node encryption are found in
 <code>cassandra.yaml</code> in the <code>client_encryption_options</code> section. There are
@@ -875,7 +914,7 @@ port to be used for secure client communication.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="operation-roles"><a class="anchor" href="#operation-roles"></a><a class="link" href="#operation-roles">Roles</a></h2>
+<h2 id="operation-roles"><a class="anchor" href="#operation-roles"></a>Roles</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Cassandra uses database roles, which may represent either a single user
@@ -891,7 +930,7 @@ information in the tables of the <code>system_auth</code> keyspace.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="authentication"><a class="anchor" href="#authentication"></a><a class="link" href="#authentication">Authentication</a></h2>
+<h2 id="authentication"><a class="anchor" href="#authentication"></a>Authentication</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Authentication is pluggable in Cassandra and is configured using the
@@ -912,7 +951,7 @@ stores encrypted credentials in a system table. This can be used to
 enable simple username/password authentication.</p>
 </div>
 <div class="sect2">
-<h3 id="password-authentication"><a class="anchor" href="#password-authentication"></a><a class="link" href="#password-authentication">Enabling Password Authentication</a></h3>
+<h3 id="password-authentication"><a class="anchor" href="#password-authentication"></a>Enabling Password Authentication</h3>
 <div class="paragraph">
 <p>Before enabling client authentication on the cluster, client
 applications should be pre-configured with their intended credentials.
@@ -1038,7 +1077,7 @@ authentication will be fully enabled throughout the cluster.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="authorization"><a class="anchor" href="#authorization"></a><a class="link" href="#authorization">Authorization</a></h2>
+<h2 id="authorization"><a class="anchor" href="#authorization"></a>Authorization</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Authorization is pluggable in Cassandra and is configured using the
@@ -1057,7 +1096,7 @@ implement full permissions management functionality and stores its data
 in Cassandra system tables.</p>
 </div>
 <div class="sect2">
-<h3 id="enabling-internal-authorization"><a class="anchor" href="#enabling-internal-authorization"></a><a class="link" href="#enabling-internal-authorization">Enabling Internal Authorization</a></h3>
+<h3 id="enabling-internal-authorization"><a class="anchor" href="#enabling-internal-authorization"></a>Enabling Internal Authorization</h3>
 <div class="paragraph">
 <p>Permissions are modelled as a whitelist, with the default assumption
 that a given role has no access to any database resources. The
@@ -1133,7 +1172,7 @@ reconnect, the enforcement of the granted permissions will begin.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="auth-caching"><a class="anchor" href="#auth-caching"></a><a class="link" href="#auth-caching">Caching</a></h2>
+<h2 id="auth-caching"><a class="anchor" href="#auth-caching"></a>Caching</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Enabling authentication and authorization places additional load on the
@@ -1197,7 +1236,7 @@ period.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="jmx-access"><a class="anchor" href="#jmx-access"></a><a class="link" href="#jmx-access">JMX access</a></h2>
+<h2 id="jmx-access"><a class="anchor" href="#jmx-access"></a>JMX access</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Access control for JMX clients is configured separately to that for CQL.
@@ -1227,7 +1266,7 @@ JMX, such as <code>nodetool &lt;nodetool&gt;</code>, are correctly configured an
 as expected.</p>
 </div>
 <div class="sect2">
-<h3 id="standard-jmx-auth"><a class="anchor" href="#standard-jmx-auth"></a><a class="link" href="#standard-jmx-auth">Standard JMX Auth</a></h3>
+<h3 id="standard-jmx-auth"><a class="anchor" href="#standard-jmx-auth"></a>Standard JMX Auth</h3>
 <div class="paragraph">
 <p>Users permitted to connect to the JMX server are specified in a simple
 text file. The location of this file is set in <code>cassandra-env.sh</code> by the
@@ -1286,7 +1325,7 @@ File-Based Password Authentication In JMX</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="cassandra-integrated-auth"><a class="anchor" href="#cassandra-integrated-auth"></a><a class="link" href="#cassandra-integrated-auth">Cassandra Integrated Auth</a></h3>
+<h3 id="cassandra-integrated-auth"><a class="anchor" href="#cassandra-integrated-auth"></a>Cassandra Integrated Auth</h3>
 <div class="paragraph">
 <p>An alternative to the out-of-the-box JMX auth is to useeCassandra&#8217;s own
 authentication and/or authorization providers for JMX clients. This is
@@ -1390,7 +1429,7 @@ are required if permissions are altered.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="jmx-with-ssl"><a class="anchor" href="#jmx-with-ssl"></a><a class="link" href="#jmx-with-ssl">JMX With SSL</a></h3>
+<h3 id="jmx-with-ssl"><a class="anchor" href="#jmx-with-ssl"></a>JMX With SSL</h3>
 <div class="paragraph">
 <p>JMX SSL configuration is controlled by a number of system properties,
 some of which are optional. To turn on SSL, edit the relevant lines in
@@ -1462,11 +1501,11 @@ with JMX</a></p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1494,16 +1533,20 @@ with JMX</a></p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/operating/security.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/operating/security.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1521,6 +1564,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

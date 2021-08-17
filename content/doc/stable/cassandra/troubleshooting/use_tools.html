@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/troubleshooting/use_tools.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/troubleshooting/use_tools.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/troubleshooting/use_tools.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -744,7 +783,7 @@ similar tools that assess similar OS level metrics and processes.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="jvm-tooling"><a class="anchor" href="#jvm-tooling"></a><a class="link" href="#jvm-tooling">JVM Tooling</a></h2>
+<h2 id="jvm-tooling"><a class="anchor" href="#jvm-tooling"></a>JVM Tooling</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The JVM ships with a number of useful tools. Some of them are useful for
@@ -771,7 +810,7 @@ be run as <code>cassandra</code>, e.g. via <code>sudo -u cassandra &lt;cmd&gt;</
 </ol>
 </div>
 <div class="sect2">
-<h3 id="garbage-collection-state-jstat"><a class="anchor" href="#garbage-collection-state-jstat"></a><a class="link" href="#garbage-collection-state-jstat">Garbage Collection State (jstat)</a></h3>
+<h3 id="garbage-collection-state-jstat"><a class="anchor" href="#garbage-collection-state-jstat"></a>Garbage Collection State (jstat)</h3>
 <div class="paragraph">
 <p>If you suspect heap pressure you can use <code>jstat</code> to dive deep into the
 garbage collection state of a Cassandra process. This command is always
@@ -812,7 +851,7 @@ high percentile latencies.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="thread-information-jstack"><a class="anchor" href="#thread-information-jstack"></a><a class="link" href="#thread-information-jstack">Thread Information (jstack)</a></h3>
+<h3 id="thread-information-jstack"><a class="anchor" href="#thread-information-jstack"></a>Thread Information (jstack)</h3>
 <div class="paragraph">
 <p>To get a point in time snapshot of exactly what Cassandra is doing, run
 <code>jstack</code> against the Cassandra PID. <strong>Note</strong> that this does pause the JVM
@@ -855,7 +894,7 @@ blocking/waiting on.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="basic-os-tooling"><a class="anchor" href="#basic-os-tooling"></a><a class="link" href="#basic-os-tooling">Basic OS Tooling</a></h2>
+<h2 id="basic-os-tooling"><a class="anchor" href="#basic-os-tooling"></a>Basic OS Tooling</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>A great place to start when debugging a Cassandra issue is understanding
@@ -907,7 +946,7 @@ of that resource or change the query pattern to make less use of that
 resource.</p>
 </div>
 <div class="sect2">
-<h3 id="high-level-resource-usage-tophtop"><a class="anchor" href="#high-level-resource-usage-tophtop"></a><a class="link" href="#high-level-resource-usage-tophtop">High Level Resource Usage (top/htop)</a></h3>
+<h3 id="high-level-resource-usage-tophtop"><a class="anchor" href="#high-level-resource-usage-tophtop"></a>High Level Resource Usage (top/htop)</h3>
 <div class="paragraph">
 <p>Cassandra makes signifiant use of system resources, and often the very
 first useful action is to run <code>top</code> or <code>htop</code>
@@ -946,7 +985,7 @@ mapped file memory.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="os-iostat"><a class="anchor" href="#os-iostat"></a><a class="link" href="#os-iostat">IO Usage (iostat)</a></h3>
+<h3 id="os-iostat"><a class="anchor" href="#os-iostat"></a>IO Usage (iostat)</h3>
 <div class="paragraph">
 <p>Use iostat to determine how data drives are faring, including latency
 distributions, throughput, and utilization:</p>
@@ -1012,7 +1051,7 @@ advanced tool such as <code>bcc-tools &lt;use-bcc-tools&gt;</code>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="os-page-cache-usage"><a class="anchor" href="#os-page-cache-usage"></a><a class="link" href="#os-page-cache-usage">OS page Cache Usage</a></h3>
+<h3 id="os-page-cache-usage"><a class="anchor" href="#os-page-cache-usage"></a>OS page Cache Usage</h3>
 <div class="paragraph">
 <p>As Cassandra makes heavy use of memory mapped files, the health of the
 operating system&#8217;s <a href="https://en.wikipedia.org/wiki/Page_cache">Page Cache</a>
@@ -1041,7 +1080,7 @@ use advanced tools like <a href="#use_tools.adoc#use-bcc-tools" class="page unre
 </div>
 </div>
 <div class="sect2">
-<h3 id="network-latency-and-reliability"><a class="anchor" href="#network-latency-and-reliability"></a><a class="link" href="#network-latency-and-reliability">Network Latency and Reliability</a></h3>
+<h3 id="network-latency-and-reliability"><a class="anchor" href="#network-latency-and-reliability"></a>Network Latency and Reliability</h3>
 <div class="paragraph">
 <p>Whenever Cassandra does writes or reads that involve other replicas,
 <code>LOCAL_QUORUM</code> reads for example, one of the dominant effects on latency
@@ -1079,7 +1118,7 @@ latency, so that can be a common cause of latency issues.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="network-throughput"><a class="anchor" href="#network-throughput"></a><a class="link" href="#network-throughput">Network Throughput</a></h3>
+<h3 id="network-throughput"><a class="anchor" href="#network-throughput"></a>Network Throughput</h3>
 <div class="paragraph">
 <p>As Cassandra is sensitive to outgoing bandwidth limitations, sometimes
 it is useful to determine if network throughput is limited. One handy
@@ -1139,14 +1178,14 @@ what issue is occurring.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="advanced-tools"><a class="anchor" href="#advanced-tools"></a><a class="link" href="#advanced-tools">Advanced tools</a></h2>
+<h2 id="advanced-tools"><a class="anchor" href="#advanced-tools"></a>Advanced tools</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Sometimes as an operator you may need to really dive deep. This is where
 advanced OS tooling can come in handy.</p>
 </div>
 <div class="sect2">
-<h3 id="use-bcc-tools"><a class="anchor" href="#use-bcc-tools"></a><a class="link" href="#use-bcc-tools">bcc-tools</a></h3>
+<h3 id="use-bcc-tools"><a class="anchor" href="#use-bcc-tools"></a>bcc-tools</h3>
 <div class="paragraph">
 <p>Most modern Linux distributions (kernels newer than <code>4.1</code>) support
 <a href="https://github.com/iovisor/bcc">bcc-tools</a> for diving deep into
@@ -1277,7 +1316,7 @@ understanding <em>how</em> Cassandra uses drives.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="use-vmtouch"><a class="anchor" href="#use-vmtouch"></a><a class="link" href="#use-vmtouch">vmtouch</a></h3>
+<h3 id="use-vmtouch"><a class="anchor" href="#use-vmtouch"></a>vmtouch</h3>
 <div class="paragraph">
 <p>Sometimes it&#8217;s useful to know how much of the Cassandra data files are
 being cached by the OS. A great tool for answering this question is
@@ -1313,7 +1352,7 @@ having additional memory may help read performance.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="cpu-flamegraphs"><a class="anchor" href="#cpu-flamegraphs"></a><a class="link" href="#cpu-flamegraphs">CPU Flamegraphs</a></h3>
+<h3 id="cpu-flamegraphs"><a class="anchor" href="#cpu-flamegraphs"></a>CPU Flamegraphs</h3>
 <div class="paragraph">
 <p>Cassandra often uses a lot of CPU, but telling <em>what</em> it is doing can
 prove difficult. One of the best ways to analyze Cassandra on CPU time
@@ -1385,7 +1424,7 @@ introspect using a browser.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="packet-capture"><a class="anchor" href="#packet-capture"></a><a class="link" href="#packet-capture">Packet Capture</a></h3>
+<h3 id="packet-capture"><a class="anchor" href="#packet-capture"></a>Packet Capture</h3>
 <div class="paragraph">
 <p>Sometimes you have to understand what queries a Cassandra node is
 performing <em>right now</em> to troubleshoot an issue. For these times trusty
@@ -1432,11 +1471,11 @@ obtaining and parsing CQL packet captures.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1464,16 +1503,20 @@ obtaining and parsing CQL packet captures.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/troubleshooting/use_tools.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/troubleshooting/use_tools.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1491,6 +1534,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

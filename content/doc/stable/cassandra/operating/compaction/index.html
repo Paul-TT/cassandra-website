@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../../_/index.html">–</a>
+            <a href="../../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../../4.0/cassandra/operating/compaction/index.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,14 +763,14 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/operating/compaction/index.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/operating/compaction/index.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
 <article class="doc">
 <h1 class="page">Compaction</h1>
 <div class="sect1">
-<h2 id="strategies"><a class="anchor" href="#strategies"></a><a class="link" href="#strategies">Strategies</a></h2>
+<h2 id="strategies"><a class="anchor" href="#strategies"></a>Strategies</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Picking the right compaction strategy for your workload will ensure the
@@ -762,7 +801,7 @@ immutable time series data.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="types-of-compaction"><a class="anchor" href="#types-of-compaction"></a><a class="link" href="#types-of-compaction">Types of compaction</a></h2>
+<h2 id="types-of-compaction"><a class="anchor" href="#types-of-compaction"></a>Types of compaction</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The concept of compaction is used for different kinds of operations in
@@ -825,7 +864,7 @@ resulting sstable will end up in L0.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="when-is-a-minor-compaction-triggered"><a class="anchor" href="#when-is-a-minor-compaction-triggered"></a><a class="link" href="#when-is-a-minor-compaction-triggered">When is a minor compaction triggered?</a></h2>
+<h2 id="when-is-a-minor-compaction-triggered"><a class="anchor" href="#when-is-a-minor-compaction-triggered"></a>When is a minor compaction triggered?</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -846,7 +885,7 @@ resulting sstable will end up in L0.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="merging-sstables"><a class="anchor" href="#merging-sstables"></a><a class="link" href="#merging-sstables">Merging SSTables</a></h2>
+<h2 id="merging-sstables"><a class="anchor" href="#merging-sstables"></a>Merging SSTables</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Compaction is about merging SSTables, since partitions in SSTables are
@@ -857,10 +896,10 @@ sorted so each partition can be merged efficiently.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="tombstones-and-garbage-collection-gc-grace"><a class="anchor" href="#tombstones-and-garbage-collection-gc-grace"></a><a class="link" href="#tombstones-and-garbage-collection-gc-grace">Tombstones and Garbage Collection (GC) Grace</a></h2>
+<h2 id="tombstones-and-garbage-collection-gc-grace"><a class="anchor" href="#tombstones-and-garbage-collection-gc-grace"></a>Tombstones and Garbage Collection (GC) Grace</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="why-tombstones"><a class="anchor" href="#why-tombstones"></a><a class="link" href="#why-tombstones">Why Tombstones</a></h3>
+<h3 id="why-tombstones"><a class="anchor" href="#why-tombstones"></a>Why Tombstones</h3>
 <div class="paragraph">
 <p>When a delete request is received by Cassandra it does not actually
 remove the data from the underlying store. Instead it writes a special
@@ -871,7 +910,7 @@ values because of the distributed nature of Cassandra.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deletes-without-tombstones"><a class="anchor" href="#deletes-without-tombstones"></a><a class="link" href="#deletes-without-tombstones">Deletes without tombstones</a></h3>
+<h3 id="deletes-without-tombstones"><a class="anchor" href="#deletes-without-tombstones"></a>Deletes without tombstones</h3>
 <div class="paragraph">
 <p>Imagine a three node cluster which has the value [A] replicated to every
 node.:</p>
@@ -905,7 +944,7 @@ deleted.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="deletes-with-tombstones"><a class="anchor" href="#deletes-with-tombstones"></a><a class="link" href="#deletes-with-tombstones">Deletes with Tombstones</a></h3>
+<h3 id="deletes-with-tombstones"><a class="anchor" href="#deletes-with-tombstones"></a>Deletes with Tombstones</h3>
 <div class="paragraph">
 <p>Starting again with a three node cluster which has the value [A]
 replicated to every node.:</p>
@@ -942,7 +981,7 @@ parameter known as <code>gc_grace_seconds</code> for every table in Cassandra.</
 </div>
 </div>
 <div class="sect2">
-<h3 id="the-gc_grace_seconds-parameter-and-tombstone-removal"><a class="anchor" href="#the-gc_grace_seconds-parameter-and-tombstone-removal"></a><a class="link" href="#the-gc_grace_seconds-parameter-and-tombstone-removal">The gc_grace_seconds parameter and Tombstone Removal</a></h3>
+<h3 id="the-gc_grace_seconds-parameter-and-tombstone-removal"><a class="anchor" href="#the-gc_grace_seconds-parameter-and-tombstone-removal"></a>The gc_grace_seconds parameter and Tombstone Removal</h3>
 <div class="paragraph">
 <p>The table level <code>gc_grace_seconds</code> parameter controls how long Cassandra
 will retain tombstones through compaction events before finally removing
@@ -990,7 +1029,7 @@ to 10 days. This can be set when creating or altering a table using
 </div>
 </div>
 <div class="sect1">
-<h2 id="ttl"><a class="anchor" href="#ttl"></a><a class="link" href="#ttl">TTL</a></h2>
+<h2 id="ttl"><a class="anchor" href="#ttl"></a>TTL</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Data in Cassandra can have an additional property called time to live -
@@ -1005,7 +1044,7 @@ compacted at once.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="fully-expired-sstables"><a class="anchor" href="#fully-expired-sstables"></a><a class="link" href="#fully-expired-sstables">Fully expired SSTables</a></h2>
+<h2 id="fully-expired-sstables"><a class="anchor" href="#fully-expired-sstables"></a>Fully expired SSTables</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>If an sstable contains only tombstones and it is guaranteed that that
@@ -1024,7 +1063,7 @@ enabling <code>unsafe_aggressive_sstable_expiration</code>.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="repairedunrepaired-data"><a class="anchor" href="#repairedunrepaired-data"></a><a class="link" href="#repairedunrepaired-data">Repaired/unrepaired data</a></h2>
+<h2 id="repairedunrepaired-data"><a class="anchor" href="#repairedunrepaired-data"></a>Repaired/unrepaired data</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>With incremental repairs Cassandra must keep track of what data is
@@ -1040,7 +1079,7 @@ unrepaired (probably newer) SSTables.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="data-directories"><a class="anchor" href="#data-directories"></a><a class="link" href="#data-directories">Data directories</a></h2>
+<h2 id="data-directories"><a class="anchor" href="#data-directories"></a>Data directories</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Since tombstones and data can live in different SSTables it is important
@@ -1076,7 +1115,7 @@ this is to create more data directories backed by the big disk.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="single-sstable-tombstone-compaction"><a class="anchor" href="#single-sstable-tombstone-compaction"></a><a class="link" href="#single-sstable-tombstone-compaction">Single sstable tombstone compaction</a></h2>
+<h2 id="single-sstable-tombstone-compaction"><a class="anchor" href="#single-sstable-tombstone-compaction"></a>Single sstable tombstone compaction</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>When an sstable is written a histogram with the tombstone expiry times
@@ -1091,7 +1130,7 @@ SSTables. To avoid most of these checks the compaction option
 </div>
 </div>
 <div class="sect1">
-<h2 id="compaction-options"><a class="anchor" href="#compaction-options"></a><a class="link" href="#compaction-options">Common options</a></h2>
+<h2 id="compaction-options"><a class="anchor" href="#compaction-options"></a>Common options</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>There is a number of common options for all the compaction strategies;</p>
@@ -1154,7 +1193,7 @@ options.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="compaction-nodetool-commands"><a class="anchor" href="#compaction-nodetool-commands"></a><a class="link" href="#compaction-nodetool-commands">Compaction nodetool commands</a></h2>
+<h2 id="compaction-nodetool-commands"><a class="anchor" href="#compaction-nodetool-commands"></a>Compaction nodetool commands</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The <code>nodetool &lt;nodetool&gt;</code> utility provides a number of commands related
@@ -1193,7 +1232,7 @@ to 4/32.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="switching-the-compaction-strategy-and-options-using-jmx"><a class="anchor" href="#switching-the-compaction-strategy-and-options-using-jmx"></a><a class="link" href="#switching-the-compaction-strategy-and-options-using-jmx">Switching the compaction strategy and options using JMX</a></h2>
+<h2 id="switching-the-compaction-strategy-and-options-using-jmx"><a class="anchor" href="#switching-the-compaction-strategy-and-options-using-jmx"></a>Switching the compaction strategy and options using JMX</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>It is possible to switch compaction strategies and its options on just a
@@ -1224,7 +1263,7 @@ settings or restarts the node.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="detailed-compaction-logging"><a class="anchor" href="#detailed-compaction-logging"></a><a class="link" href="#detailed-compaction-logging">More detailed compaction logging</a></h2>
+<h2 id="detailed-compaction-logging"><a class="anchor" href="#detailed-compaction-logging"></a>More detailed compaction logging</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Enable with the compaction option <code>log_all</code> and a more detailed
@@ -1239,11 +1278,11 @@ compaction log file will be produced in your log directory.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1271,16 +1310,20 @@ compaction log file will be produced in your log directory.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../../assets/js/site.js"></script>
-<script async src="../../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/Cassandra/3.11/cassandra/operating/compaction/index.html"></script>
-<script async src="../../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../../assets/js/site.js"></script>
+    <script async src="../../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/Cassandra/4.0/cassandra/operating/compaction/index.html"></script>
+    <script async src="../../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1298,6 +1341,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

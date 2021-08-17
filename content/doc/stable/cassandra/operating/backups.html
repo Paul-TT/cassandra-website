@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/operating/backups.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/operating/backups.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/operating/backups.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -756,7 +795,7 @@ portability</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="types-of-backups"><a class="anchor" href="#types-of-backups"></a><a class="link" href="#types-of-backups">Types of Backups</a></h2>
+<h2 id="types-of-backups"><a class="anchor" href="#types-of-backups"></a>Types of Backups</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Apache Cassandra supports two kinds of backup strategies.</p>
@@ -800,7 +839,7 @@ Incremental backups of system tables are also created.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="data-directory-structure"><a class="anchor" href="#data-directory-structure"></a><a class="link" href="#data-directory-structure">Data Directory Structure</a></h2>
+<h2 id="data-directory-structure"><a class="anchor" href="#data-directory-structure"></a>Data Directory Structure</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The directory structure of Cassandra data consists of different
@@ -820,7 +859,7 @@ The directory structure for Cassandra is illustrated in Figure 1.</p>
 <p>Figure 1. Directory Structure for Cassandra Data</p>
 </div>
 <div class="sect2">
-<h3 id="setting-up-example-tables-for-backups-and-snapshots"><a class="anchor" href="#setting-up-example-tables-for-backups-and-snapshots"></a><a class="link" href="#setting-up-example-tables-for-backups-and-snapshots">Setting Up Example Tables for Backups and Snapshots</a></h3>
+<h3 id="setting-up-example-tables-for-backups-and-snapshots"><a class="anchor" href="#setting-up-example-tables-for-backups-and-snapshots"></a>Setting Up Example Tables for Backups and Snapshots</h3>
 <div class="paragraph">
 <p>In this section we shall create some example data that could be used to
 demonstrate incremental backups and snapshots.
@@ -978,7 +1017,7 @@ id | name                      | publisher
 </div>
 </div>
 <div class="sect1">
-<h2 id="snapshots"><a class="anchor" href="#snapshots"></a><a class="link" href="#snapshots">Snapshots</a></h2>
+<h2 id="snapshots"><a class="anchor" href="#snapshots"></a>Snapshots</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In this section, we demonstrate creating snapshots.
@@ -1051,7 +1090,7 @@ OPTIONS
 </div>
 </div>
 <div class="sect2">
-<h3 id="configuring-for-snapshots"><a class="anchor" href="#configuring-for-snapshots"></a><a class="link" href="#configuring-for-snapshots">Configuring for Snapshots</a></h3>
+<h3 id="configuring-for-snapshots"><a class="anchor" href="#configuring-for-snapshots"></a>Configuring for Snapshots</h3>
 <div class="paragraph">
 <p>To demonstrate creating snapshots with Nodetool on the commandline we
 have set <code>auto_snapshots</code> setting to <code>false</code> in the <code>cassandra.yaml</code> file:</p>
@@ -1072,7 +1111,7 @@ snapshots automatically before compaction:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="creating-snapshots"><a class="anchor" href="#creating-snapshots"></a><a class="link" href="#creating-snapshots">Creating Snapshots</a></h3>
+<h3 id="creating-snapshots"><a class="anchor" href="#creating-snapshots"></a>Creating Snapshots</h3>
 <div class="paragraph">
 <p>Before creating any snapshots, search for snapshots and none will be listed:</p>
 </div>
@@ -1085,7 +1124,7 @@ snapshots automatically before compaction:</p>
 <p>We shall be using the example keyspaces and tables to create snapshots.</p>
 </div>
 <div class="sect3">
-<h4 id="taking-snapshots-of-all-tables-in-a-keyspace"><a class="anchor" href="#taking-snapshots-of-all-tables-in-a-keyspace"></a><a class="link" href="#taking-snapshots-of-all-tables-in-a-keyspace">Taking Snapshots of all Tables in a Keyspace</a></h4>
+<h4 id="taking-snapshots-of-all-tables-in-a-keyspace"><a class="anchor" href="#taking-snapshots-of-all-tables-in-a-keyspace"></a>Taking Snapshots of all Tables in a Keyspace</h4>
 <div class="paragraph">
 <p>Using the syntax above, create a snapshot called <code>catalog-ks</code> for all the tables
 in the <code>catalogkeyspace</code> keyspace:</p>
@@ -1125,7 +1164,7 @@ are now found with listed files similar to:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="taking-snapshots-of-single-table-in-a-keyspace"><a class="anchor" href="#taking-snapshots-of-single-table-in-a-keyspace"></a><a class="link" href="#taking-snapshots-of-single-table-in-a-keyspace">Taking Snapshots of Single Table in a Keyspace</a></h4>
+<h4 id="taking-snapshots-of-single-table-in-a-keyspace"><a class="anchor" href="#taking-snapshots-of-single-table-in-a-keyspace"></a>Taking Snapshots of Single Table in a Keyspace</h4>
 <div class="paragraph">
 <p>To take a snapshot of a single table the <code>nodetool snapshot</code> command
 syntax becomes as follows:</p>
@@ -1155,7 +1194,7 @@ Snapshot directory: magazine</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="taking-snapshot-of-multiple-tables-from-same-keyspace"><a class="anchor" href="#taking-snapshot-of-multiple-tables-from-same-keyspace"></a><a class="link" href="#taking-snapshot-of-multiple-tables-from-same-keyspace">Taking Snapshot of Multiple Tables from same Keyspace</a></h4>
+<h4 id="taking-snapshot-of-multiple-tables-from-same-keyspace"><a class="anchor" href="#taking-snapshot-of-multiple-tables-from-same-keyspace"></a>Taking Snapshot of Multiple Tables from same Keyspace</h4>
 <div class="paragraph">
 <p>To take snapshots of multiple tables in a keyspace the list of
 <em>Keyspace.table</em> must be specified with option <code>--kt-list</code>.
@@ -1198,7 +1237,7 @@ Snapshot directory: multi-table-2</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="taking-snapshot-of-multiple-tables-from-different-keyspaces"><a class="anchor" href="#taking-snapshot-of-multiple-tables-from-different-keyspaces"></a><a class="link" href="#taking-snapshot-of-multiple-tables-from-different-keyspaces">Taking Snapshot of Multiple Tables from Different Keyspaces</a></h4>
+<h4 id="taking-snapshot-of-multiple-tables-from-different-keyspaces"><a class="anchor" href="#taking-snapshot-of-multiple-tables-from-different-keyspaces"></a>Taking Snapshot of Multiple Tables from Different Keyspaces</h4>
 <div class="paragraph">
 <p>To take snapshots of multiple tables that are in different keyspaces the
 command syntax is the same as when multiple tables are in the same
@@ -1229,7 +1268,7 @@ Snapshot directory: multi-ks</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="listing-snapshots"><a class="anchor" href="#listing-snapshots"></a><a class="link" href="#listing-snapshots">Listing Snapshots</a></h3>
+<h3 id="listing-snapshots"><a class="anchor" href="#listing-snapshots"></a>Listing Snapshots</h3>
 <div class="paragraph">
 <p>To list snapshots use the <code>nodetool listsnapshots</code> command. All the
 snapshots that we created in the preceding examples get listed:</p>
@@ -1261,7 +1300,7 @@ Total TrueDiskSpaceUsed: 44.02 KiB</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="finding-snapshots-directories"><a class="anchor" href="#finding-snapshots-directories"></a><a class="link" href="#finding-snapshots-directories">Finding Snapshots Directories</a></h3>
+<h3 id="finding-snapshots-directories"><a class="anchor" href="#finding-snapshots-directories"></a>Finding Snapshots Directories</h3>
 <div class="paragraph">
 <p>The <code>snapshots</code> directories may be listed with <code>find –name snapshots</code>
 command:</p>
@@ -1331,7 +1370,7 @@ that can recreate the table with CQL when restoring from a snapshot:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="clearing-snapshots"><a class="anchor" href="#clearing-snapshots"></a><a class="link" href="#clearing-snapshots">Clearing Snapshots</a></h3>
+<h3 id="clearing-snapshots"><a class="anchor" href="#clearing-snapshots"></a>Clearing Snapshots</h3>
 <div class="paragraph">
 <p>Snapshots may be cleared or deleted with the <code>nodetool clearsnapshot</code>
 command. Either a specific snapshot name must be specified or the <code>–all</code>
@@ -1357,14 +1396,14 @@ option must be specified.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="incremental-backups"><a class="anchor" href="#incremental-backups"></a><a class="link" href="#incremental-backups">Incremental Backups</a></h2>
+<h2 id="incremental-backups"><a class="anchor" href="#incremental-backups"></a>Incremental Backups</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In the following sections, we shall discuss configuring and creating
 incremental backups.</p>
 </div>
 <div class="sect2">
-<h3 id="configuring-for-incremental-backups"><a class="anchor" href="#configuring-for-incremental-backups"></a><a class="link" href="#configuring-for-incremental-backups">Configuring for Incremental Backups</a></h3>
+<h3 id="configuring-for-incremental-backups"><a class="anchor" href="#configuring-for-incremental-backups"></a>Configuring for Incremental Backups</h3>
 <div class="paragraph">
 <p>To create incremental backups set <code>incremental_backups</code> to <code>true</code> in
 <code>cassandra.yaml</code>.</p>
@@ -1387,7 +1426,7 @@ Status of incremental backups, whether they are enabled may be checked with <cod
 </div>
 </div>
 <div class="sect2">
-<h3 id="creating-incremental-backups"><a class="anchor" href="#creating-incremental-backups"></a><a class="link" href="#creating-incremental-backups">Creating Incremental Backups</a></h3>
+<h3 id="creating-incremental-backups"><a class="anchor" href="#creating-incremental-backups"></a>Creating Incremental Backups</h3>
 <div class="paragraph">
 <p>After each table is created flush the table data with <code>nodetool flush</code>
 command. Incremental backups get created.</p>
@@ -1401,7 +1440,7 @@ $ nodetool flush catalogkeyspace journal magazine</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="finding-incremental-backups"><a class="anchor" href="#finding-incremental-backups"></a><a class="link" href="#finding-incremental-backups">Finding Incremental Backups</a></h3>
+<h3 id="finding-incremental-backups"><a class="anchor" href="#finding-incremental-backups"></a>Finding Incremental Backups</h3>
 <div class="paragraph">
 <p>Incremental backups are created within the Cassandra’s <code>data</code> directory
 within a table directory. Backups may be found with following command.</p>
@@ -1424,7 +1463,7 @@ within a table directory. Backups may be found with following command.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="creating-an-incremental-backup"><a class="anchor" href="#creating-an-incremental-backup"></a><a class="link" href="#creating-an-incremental-backup">Creating an Incremental Backup</a></h3>
+<h3 id="creating-an-incremental-backup"><a class="anchor" href="#creating-an-incremental-backup"></a>Creating an Incremental Backup</h3>
 <div class="paragraph">
 <p>This section discusses how incremental backups are created in more
 detail using the keyspace and table previously created.</p>
@@ -1542,7 +1581,7 @@ second:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="restoring-from-incremental-backups-and-snapshots"><a class="anchor" href="#restoring-from-incremental-backups-and-snapshots"></a><a class="link" href="#restoring-from-incremental-backups-and-snapshots">Restoring from Incremental Backups and Snapshots</a></h2>
+<h2 id="restoring-from-incremental-backups-and-snapshots"><a class="anchor" href="#restoring-from-incremental-backups-and-snapshots"></a>Restoring from Incremental Backups and Snapshots</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The two main tools/commands for restoring a table after it has been
@@ -1574,11 +1613,11 @@ restoring from an incremental backup.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1606,16 +1645,20 @@ restoring from an incremental backup.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/operating/backups.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/operating/backups.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1633,6 +1676,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

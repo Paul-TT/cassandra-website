@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/cql/types.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/cql/types.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/cql/types.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -746,7 +785,7 @@ types</a>:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="native-types"><a class="anchor" href="#native-types"></a><a class="link" href="#native-types">Native types</a></h2>
+<h2 id="native-types"><a class="anchor" href="#native-types"></a>Native types</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The native types supported by CQL are:</p>
@@ -889,7 +928,7 @@ generally used as a “conflict-free” timestamp. Also see <code>timeuuid-funct
 </tbody>
 </table>
 <div class="sect2">
-<h3 id="counters"><a class="anchor" href="#counters"></a><a class="link" href="#counters">Counters</a></h3>
+<h3 id="counters"><a class="anchor" href="#counters"></a>Counters</h3>
 <div class="paragraph">
 <p>The <code>counter</code> type is used to define <em>counter columns</em>. A counter column
 is a column whose value is a 64-bit signed integer and on which 2
@@ -935,7 +974,7 @@ update may or may not lead to an over count.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="timestamps"><a class="anchor" href="#timestamps"></a><a class="link" href="#timestamps">Working with timestamps</a></h2>
+<h2 id="timestamps"><a class="anchor" href="#timestamps"></a>Working with timestamps</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Values of the <code>timestamp</code> type are encoded as 64-bit signed integers
@@ -994,7 +1033,7 @@ date part is relevant, consider using the <a href="#dates">date</a> type.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="dates"><a class="anchor" href="#dates"></a><a class="link" href="#dates">Date type</a></h2>
+<h2 id="dates"><a class="anchor" href="#dates"></a>Date type</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Values of the <code>date</code> type are encoded as 32-bit unsigned integers
@@ -1009,7 +1048,7 @@ be <code>yyyy-mm-dd</code> (so <code>'2011-02-03'</code> for instance).</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="times"><a class="anchor" href="#times"></a><a class="link" href="#times">Time type</a></h2>
+<h2 id="times"><a class="anchor" href="#times"></a>Time type</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Values of the <code>time</code> type are encoded as 64-bit signed integers
@@ -1041,7 +1080,7 @@ So for instance, the following are valid inputs for a time:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="durations"><a class="anchor" href="#durations"></a><a class="link" href="#durations">Duration type</a></h2>
+<h2 id="durations"><a class="anchor" href="#durations"></a>Duration type</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Values of the <code>duration</code> type are encoded as 3 signed integer of
@@ -1129,7 +1168,7 @@ been created to be able to support daylight saving.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="collections"><a class="anchor" href="#collections"></a><a class="link" href="#collections">Collections</a></h2>
+<h2 id="collections"><a class="anchor" href="#collections"></a>Collections</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>CQL supports three kinds of collections: <code>maps</code>, <code>sets</code> and <code>lists</code>. The
@@ -1158,7 +1197,7 @@ list_literal::= '[' [ term (',' term)* ] ']'</code></pre>
 collection literals.</p>
 </div>
 <div class="sect2">
-<h3 id="noteworthy-characteristics"><a class="anchor" href="#noteworthy-characteristics"></a><a class="link" href="#noteworthy-characteristics">Noteworthy characteristics</a></h3>
+<h3 id="noteworthy-characteristics"><a class="anchor" href="#noteworthy-characteristics"></a>Noteworthy characteristics</h3>
 <div class="paragraph">
 <p>Collections are meant for storing/denormalizing relatively small amount
 of data. They work well for things like “the phone numbers of a given
@@ -1193,7 +1232,7 @@ removed/improved upon in the future, it is a anti-pattern to use a
 </div>
 </div>
 <div class="sect2">
-<h3 id="maps"><a class="anchor" href="#maps"></a><a class="link" href="#maps">Maps</a></h3>
+<h3 id="maps"><a class="anchor" href="#maps"></a>Maps</h3>
 <div class="paragraph">
 <p>A <code>map</code> is a (sorted) set of key-value pairs, where keys are unique and
 the map is sorted by its keys. You can define and insert a map with:</p>
@@ -1259,7 +1298,7 @@ of the map remaining unaffected.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="sets"><a class="anchor" href="#sets"></a><a class="link" href="#sets">Sets</a></h3>
+<h3 id="sets"><a class="anchor" href="#sets"></a>Sets</h3>
 <div class="paragraph">
 <p>A <code>set</code> is a (sorted) collection of unique values. You can define and
 insert a map with:</p>
@@ -1309,7 +1348,7 @@ removing it is a no-op but no error is thrown):</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="lists"><a class="anchor" href="#lists"></a><a class="link" href="#lists">Lists</a></h3>
+<h3 id="lists"><a class="anchor" href="#lists"></a>Lists</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1442,7 +1481,7 @@ exclusion of conditional write that have their own cost).</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="udts"><a class="anchor" href="#udts"></a><a class="link" href="#udts">User-Defined Types (UDTs)</a></h2>
+<h2 id="udts"><a class="anchor" href="#udts"></a>User-Defined Types (UDTs)</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>CQL support the definition of user-defined types (UDTs). Such a
@@ -1458,7 +1497,7 @@ udt_name::= [ keyspace_name '.' ] identifier</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="creating-a-udt"><a class="anchor" href="#creating-a-udt"></a><a class="link" href="#creating-a-udt">Creating a UDT</a></h3>
+<h3 id="creating-a-udt"><a class="anchor" href="#creating-a-udt"></a>Creating a UDT</h3>
 <div class="paragraph">
 <p>Creating a new user-defined type is done using a <code>CREATE TYPE</code> statement
 defined by:</p>
@@ -1520,7 +1559,7 @@ on <a href="#frozen">frozen</a> for more details.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="udt-literals"><a class="anchor" href="#udt-literals"></a><a class="link" href="#udt-literals">UDT literals</a></h3>
+<h3 id="udt-literals"><a class="anchor" href="#udt-literals"></a>UDT literals</h3>
 <div class="paragraph">
 <p>Once a used-defined type has been created, value can be input using a
 UDT literal:</p>
@@ -1562,7 +1601,7 @@ type it is a literal of, but it can omit some fields (these will be set to <code
 </div>
 </div>
 <div class="sect2">
-<h3 id="altering-a-udt"><a class="anchor" href="#altering-a-udt"></a><a class="link" href="#altering-a-udt">Altering a UDT</a></h3>
+<h3 id="altering-a-udt"><a class="anchor" href="#altering-a-udt"></a>Altering a UDT</h3>
 <div class="paragraph">
 <p>An existing user-defined type can be modified using an <code>ALTER TYPE</code>
 statement:</p>
@@ -1596,7 +1635,7 @@ the addition.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="dropping-a-udt"><a class="anchor" href="#dropping-a-udt"></a><a class="link" href="#dropping-a-udt">Dropping a UDT</a></h3>
+<h3 id="dropping-a-udt"><a class="anchor" href="#dropping-a-udt"></a>Dropping a UDT</h3>
 <div class="paragraph">
 <p>You can drop an existing user-defined type using a <code>DROP TYPE</code>
 statement:</p>
@@ -1619,7 +1658,7 @@ type, table or function will result in an error.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="tuples"><a class="anchor" href="#tuples"></a><a class="link" href="#tuples">Tuples</a></h2>
+<h2 id="tuples"><a class="anchor" href="#tuples"></a>Tuples</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>CQL also support tuples and tuple types (where the elements can be of
@@ -1656,7 +1695,7 @@ those values can be null but they need to be explicitly declared as so).</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="custom-types"><a class="anchor" href="#custom-types"></a><a class="link" href="#custom-types">Custom Types</a></h2>
+<h2 id="custom-types"><a class="anchor" href="#custom-types"></a>Custom Types</h2>
 <div class="sectionbody">
 <div class="admonitionblock note">
 <table>
@@ -1702,11 +1741,11 @@ can in particular be input using the <code>blob</code> literal syntax.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1734,16 +1773,20 @@ can in particular be input using the <code>blob</code> literal syntax.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/cql/types.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/cql/types.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1761,6 +1804,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

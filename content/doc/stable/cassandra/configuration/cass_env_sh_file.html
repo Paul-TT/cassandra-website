@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/configuration/cass_env_sh_file.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/configuration/cass_env_sh_file.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/configuration/cass_env_sh_file.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -756,7 +795,7 @@ line and <code>cassandra-env.sh</code> file. The following options are available
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-auto_bootstrapfalse"><a class="anchor" href="#cassandra-auto_bootstrapfalse"></a><a class="link" href="#cassandra-auto_bootstrapfalse"><code>cassandra.auto_bootstrap=false</code></a></h2>
+<h2 id="cassandra-auto_bootstrapfalse"><a class="anchor" href="#cassandra-auto_bootstrapfalse"></a><code>cassandra.auto_bootstrap=false</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Facilitates setting auto_bootstrap to false on initial set-up of the
@@ -767,7 +806,7 @@ value.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-available_processorsnumber_of_processors"><a class="anchor" href="#cassandra-available_processorsnumber_of_processors"></a><a class="link" href="#cassandra-available_processorsnumber_of_processors"><code>cassandra.available_processors=&lt;number_of_processors&gt;</code></a></h2>
+<h2 id="cassandra-available_processorsnumber_of_processors"><a class="anchor" href="#cassandra-available_processorsnumber_of_processors"></a><code>cassandra.available_processors=&lt;number_of_processors&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In a multi-instance deployment, multiple Cassandra instances will
@@ -777,7 +816,7 @@ setting allows you to specify a smaller set of processors.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-boot_without_jnatrue"><a class="anchor" href="#cassandra-boot_without_jnatrue"></a><a class="link" href="#cassandra-boot_without_jnatrue"><code>cassandra.boot_without_jna=true</code></a></h2>
+<h2 id="cassandra-boot_without_jnatrue"><a class="anchor" href="#cassandra-boot_without_jnatrue"></a><code>cassandra.boot_without_jna=true</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>If JNA fails to initialize, Cassandra fails to boot. Use this command to
@@ -786,7 +825,7 @@ boot Cassandra without JNA.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-configdirectory"><a class="anchor" href="#cassandra-configdirectory"></a><a class="link" href="#cassandra-configdirectory"><code>cassandra.config=&lt;directory&gt;</code></a></h2>
+<h2 id="cassandra-configdirectory"><a class="anchor" href="#cassandra-configdirectory"></a><code>cassandra.config=&lt;directory&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The directory location of the <code>cassandra.yaml file</code>. The default
@@ -795,7 +834,7 @@ location depends on the type of installation.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-ignore_dynamic_snitch_severitytruefalse"><a class="anchor" href="#cassandra-ignore_dynamic_snitch_severitytruefalse"></a><a class="link" href="#cassandra-ignore_dynamic_snitch_severitytruefalse"><code>cassandra.ignore_dynamic_snitch_severity=true|false</code></a></h2>
+<h2 id="cassandra-ignore_dynamic_snitch_severitytruefalse"><a class="anchor" href="#cassandra-ignore_dynamic_snitch_severitytruefalse"></a><code>cassandra.ignore_dynamic_snitch_severity=true|false</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Setting this property to true causes the dynamic snitch to ignore the
@@ -808,7 +847,7 @@ detection and recovery and dynamic snitching for more information.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-initial_tokentoken"><a class="anchor" href="#cassandra-initial_tokentoken"></a><a class="link" href="#cassandra-initial_tokentoken"><code>cassandra.initial_token=&lt;token&gt;</code></a></h2>
+<h2 id="cassandra-initial_tokentoken"><a class="anchor" href="#cassandra-initial_tokentoken"></a><code>cassandra.initial_token=&lt;token&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Use when virtual nodes (vnodes) are not used. Sets the initial
@@ -821,7 +860,7 @@ Vnodes are highly recommended as they automatically select tokens.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-join_ringtruefalse"><a class="anchor" href="#cassandra-join_ringtruefalse"></a><a class="link" href="#cassandra-join_ringtruefalse"><code>cassandra.join_ring=true|false</code></a></h2>
+<h2 id="cassandra-join_ringtruefalse"><a class="anchor" href="#cassandra-join_ringtruefalse"></a><code>cassandra.join_ring=true|false</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set to false to start Cassandra on a node but not have the node join the
@@ -834,7 +873,7 @@ afterwards.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-load_ring_statetruefalse"><a class="anchor" href="#cassandra-load_ring_statetruefalse"></a><a class="link" href="#cassandra-load_ring_statetruefalse"><code>cassandra.load_ring_state=true|false</code></a></h2>
+<h2 id="cassandra-load_ring_statetruefalse"><a class="anchor" href="#cassandra-load_ring_statetruefalse"></a><code>cassandra.load_ring_state=true|false</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set to false to clear all gossip state for the node on restart.</p>
@@ -845,7 +884,7 @@ afterwards.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-metricsreporterconfigfilefilename"><a class="anchor" href="#cassandra-metricsreporterconfigfilefilename"></a><a class="link" href="#cassandra-metricsreporterconfigfilefilename"><code>cassandra.metricsReporterConfigFile=&lt;filename&gt;</code></a></h2>
+<h2 id="cassandra-metricsreporterconfigfilefilename"><a class="anchor" href="#cassandra-metricsreporterconfigfilefilename"></a><code>cassandra.metricsReporterConfigFile=&lt;filename&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Enable pluggable metrics reporter. Explore pluggable metrics reporting
@@ -854,7 +893,7 @@ for more information.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-partitionerpartitioner"><a class="anchor" href="#cassandra-partitionerpartitioner"></a><a class="link" href="#cassandra-partitionerpartitioner"><code>cassandra.partitioner=&lt;partitioner&gt;</code></a></h2>
+<h2 id="cassandra-partitionerpartitioner"><a class="anchor" href="#cassandra-partitionerpartitioner"></a><code>cassandra.partitioner=&lt;partitioner&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set the partitioner.</p>
@@ -865,7 +904,7 @@ for more information.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-prepared_statements_cache_size_in_bytescache_size"><a class="anchor" href="#cassandra-prepared_statements_cache_size_in_bytescache_size"></a><a class="link" href="#cassandra-prepared_statements_cache_size_in_bytescache_size"><code>cassandra.prepared_statements_cache_size_in_bytes=&lt;cache_size&gt;</code></a></h2>
+<h2 id="cassandra-prepared_statements_cache_size_in_bytescache_size"><a class="anchor" href="#cassandra-prepared_statements_cache_size_in_bytescache_size"></a><code>cassandra.prepared_statements_cache_size_in_bytes=&lt;cache_size&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set the cache size for prepared statements.</p>
@@ -873,7 +912,7 @@ for more information.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-replace_addresslisten_address-of-dead-nodebroadcast_address-of-dead-node"><a class="anchor" href="#cassandra-replace_addresslisten_address-of-dead-nodebroadcast_address-of-dead-node"></a><a class="link" href="#cassandra-replace_addresslisten_address-of-dead-nodebroadcast_address-of-dead-node"><code>cassandra.replace_address=&lt;listen_address of dead node&gt;|&lt;broadcast_address of dead node&gt;</code></a></h2>
+<h2 id="cassandra-replace_addresslisten_address-of-dead-nodebroadcast_address-of-dead-node"><a class="anchor" href="#cassandra-replace_addresslisten_address-of-dead-nodebroadcast_address-of-dead-node"></a><code>cassandra.replace_address=&lt;listen_address of dead node&gt;|&lt;broadcast_address of dead node&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>To replace a node that has died, restart a new node in its place
@@ -886,7 +925,7 @@ defaults to the <code>listen_address</code> except when using the
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-replaylisttable"><a class="anchor" href="#cassandra-replaylisttable"></a><a class="link" href="#cassandra-replaylisttable"><code>cassandra.replayList=&lt;table&gt;</code></a></h2>
+<h2 id="cassandra-replaylisttable"><a class="anchor" href="#cassandra-replaylisttable"></a><code>cassandra.replayList=&lt;table&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Allow restoring specific tables from an archived commit log.</p>
@@ -894,7 +933,7 @@ defaults to the <code>listen_address</code> except when using the
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-ring_delay_msnumber_of_ms"><a class="anchor" href="#cassandra-ring_delay_msnumber_of_ms"></a><a class="link" href="#cassandra-ring_delay_msnumber_of_ms"><code>cassandra.ring_delay_ms=&lt;number_of_ms&gt;</code></a></h2>
+<h2 id="cassandra-ring_delay_msnumber_of_ms"><a class="anchor" href="#cassandra-ring_delay_msnumber_of_ms"></a><code>cassandra.ring_delay_ms=&lt;number_of_ms&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Defines the amount of time a node waits to hear from other nodes before
@@ -906,7 +945,7 @@ formally joining the ring.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-native_transport_portport"><a class="anchor" href="#cassandra-native_transport_portport"></a><a class="link" href="#cassandra-native_transport_portport"><code>cassandra.native_transport_port=&lt;port&gt;</code></a></h2>
+<h2 id="cassandra-native_transport_portport"><a class="anchor" href="#cassandra-native_transport_portport"></a><code>cassandra.native_transport_port=&lt;port&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set the port on which the CQL native transport listens for clients.</p>
@@ -917,7 +956,7 @@ formally joining the ring.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-rpc_portport"><a class="anchor" href="#cassandra-rpc_portport"></a><a class="link" href="#cassandra-rpc_portport"><code>cassandra.rpc_port=&lt;port&gt;</code></a></h2>
+<h2 id="cassandra-rpc_portport"><a class="anchor" href="#cassandra-rpc_portport"></a><code>cassandra.rpc_port=&lt;port&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set the port for the Thrift RPC service, which is used for client
@@ -929,7 +968,7 @@ connections.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-storage_portport"><a class="anchor" href="#cassandra-storage_portport"></a><a class="link" href="#cassandra-storage_portport"><code>cassandra.storage_port=&lt;port&gt;</code></a></h2>
+<h2 id="cassandra-storage_portport"><a class="anchor" href="#cassandra-storage_portport"></a><code>cassandra.storage_port=&lt;port&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set the port for inter-node communication.</p>
@@ -940,7 +979,7 @@ connections.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-ssl_storage_portport"><a class="anchor" href="#cassandra-ssl_storage_portport"></a><a class="link" href="#cassandra-ssl_storage_portport"><code>cassandra.ssl_storage_port=&lt;port&gt;</code></a></h2>
+<h2 id="cassandra-ssl_storage_portport"><a class="anchor" href="#cassandra-ssl_storage_portport"></a><code>cassandra.ssl_storage_port=&lt;port&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set the SSL port for encrypted communication.</p>
@@ -951,7 +990,7 @@ connections.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-start_native_transporttruefalse"><a class="anchor" href="#cassandra-start_native_transporttruefalse"></a><a class="link" href="#cassandra-start_native_transporttruefalse"><code>cassandra.start_native_transport=true|false</code></a></h2>
+<h2 id="cassandra-start_native_transporttruefalse"><a class="anchor" href="#cassandra-start_native_transporttruefalse"></a><code>cassandra.start_native_transport=true|false</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Enable or disable the native transport server. See
@@ -963,7 +1002,7 @@ connections.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-start_rpctruefalse"><a class="anchor" href="#cassandra-start_rpctruefalse"></a><a class="link" href="#cassandra-start_rpctruefalse"><code>cassandra.start_rpc=true|false</code></a></h2>
+<h2 id="cassandra-start_rpctruefalse"><a class="anchor" href="#cassandra-start_rpctruefalse"></a><code>cassandra.start_rpc=true|false</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Enable or disable the Thrift RPC server.</p>
@@ -974,7 +1013,7 @@ connections.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-triggers_dirdirectory"><a class="anchor" href="#cassandra-triggers_dirdirectory"></a><a class="link" href="#cassandra-triggers_dirdirectory"><code>cassandra.triggers_dir=&lt;directory&gt;</code></a></h2>
+<h2 id="cassandra-triggers_dirdirectory"><a class="anchor" href="#cassandra-triggers_dirdirectory"></a><code>cassandra.triggers_dir=&lt;directory&gt;</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set the default location for the trigger JARs.</p>
@@ -985,7 +1024,7 @@ connections.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cassandra-write_surveytrue"><a class="anchor" href="#cassandra-write_surveytrue"></a><a class="link" href="#cassandra-write_surveytrue"><code>cassandra.write_survey=true</code></a></h2>
+<h2 id="cassandra-write_surveytrue"><a class="anchor" href="#cassandra-write_surveytrue"></a><code>cassandra.write_survey=true</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>For testing new compaction and compression strategies. It allows you to
@@ -995,7 +1034,7 @@ differences without affecting the production workload.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="consistent-rangemovementtruefalse"><a class="anchor" href="#consistent-rangemovementtruefalse"></a><a class="link" href="#consistent-rangemovementtruefalse"><code>consistent.rangemovement=true|false</code></a></h2>
+<h2 id="consistent-rangemovementtruefalse"><a class="anchor" href="#consistent-rangemovementtruefalse"></a><code>consistent.rangemovement=true|false</code></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Set to true makes Cassandra perform bootstrap safely without violating
@@ -1010,11 +1049,11 @@ consistency. False disables this.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1042,16 +1081,20 @@ consistency. False disables this.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/configuration/cass_env_sh_file.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/configuration/cass_env_sh_file.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1069,6 +1112,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

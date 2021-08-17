@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/cql/SASI.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,13 +763,13 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/cql/SASI.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/cql/SASI.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
 <article class="doc">
 <div class="sect1">
-<h2 id="sasiindex"><a class="anchor" href="#sasiindex"></a><a class="link" href="#sasiindex">SASIIndex</a></h2>
+<h2 id="sasiindex"><a class="anchor" href="#sasiindex"></a>SASIIndex</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/SASIIndex.java"><code>SASIIndex</code></a>,
@@ -750,7 +789,7 @@ demonstrates usage with examples, and provides some details on its
 implementation.</p>
 </div>
 <div class="sect2">
-<h3 id="using-sasi"><a class="anchor" href="#using-sasi"></a><a class="link" href="#using-sasi">Using SASI</a></h3>
+<h3 id="using-sasi"><a class="anchor" href="#using-sasi"></a>Using SASI</h3>
 <div class="paragraph">
 <p>The examples below walk through creating a table and indexes on its
 columns, and performing queries on some inserted data.</p>
@@ -778,7 +817,7 @@ cqlsh&gt; USE demo;</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="creating-indexes"><a class="anchor" href="#creating-indexes"></a><a class="link" href="#creating-indexes">Creating Indexes</a></h4>
+<h4 id="creating-indexes"><a class="anchor" href="#creating-indexes"></a>Creating Indexes</h4>
 <div class="paragraph">
 <p>To create SASI indexes use CQLs <code>CREATE CUSTOM INDEX</code> statement:</p>
 </div>
@@ -864,7 +903,7 @@ cqlsh:demo&gt; SELECT first_name, last_name, age, height, created_at FROM sasi;
 </div>
 </div>
 <div class="sect3">
-<h4 id="equality-prefix-queries"><a class="anchor" href="#equality-prefix-queries"></a><a class="link" href="#equality-prefix-queries">Equality &amp; Prefix Queries</a></h4>
+<h4 id="equality-prefix-queries"><a class="anchor" href="#equality-prefix-queries"></a>Equality &amp; Prefix Queries</h4>
 <div class="paragraph">
 <p>SASI supports all queries already supported by CQL, including LIKE
 statement for PREFIX, CONTAINS and SUFFIX searches.</p>
@@ -925,7 +964,7 @@ column because of the options provided at index creation time.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="compound-queries"><a class="anchor" href="#compound-queries"></a><a class="link" href="#compound-queries">Compound Queries</a></h4>
+<h4 id="compound-queries"><a class="anchor" href="#compound-queries"></a>Compound Queries</h4>
 <div class="paragraph">
 <p>SASI supports queries with multiple predicates, however, due to the
 nature of the default indexing implementation, CQL requires the user to
@@ -951,7 +990,7 @@ section.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="suffix-queries"><a class="anchor" href="#suffix-queries"></a><a class="link" href="#suffix-queries">Suffix Queries</a></h4>
+<h4 id="suffix-queries"><a class="anchor" href="#suffix-queries"></a>Suffix Queries</h4>
 <div class="paragraph">
 <p>The next example demonstrates <code>CONTAINS</code> mode on the <code>last_name</code> column.
 By using this mode, predicates can search for any strings containing the
@@ -984,7 +1023,7 @@ cqlsh:demo&gt; SELECT * FROM sasi WHERE last_name LIKE '%an%';
 </div>
 </div>
 <div class="sect3">
-<h4 id="expressions-on-non-indexed-columns"><a class="anchor" href="#expressions-on-non-indexed-columns"></a><a class="link" href="#expressions-on-non-indexed-columns">Expressions on Non-Indexed Columns</a></h4>
+<h4 id="expressions-on-non-indexed-columns"><a class="anchor" href="#expressions-on-non-indexed-columns"></a>Expressions on Non-Indexed Columns</h4>
 <div class="paragraph">
 <p>SASI also supports filtering on non-indexed columns like <code>height</code>. The
 expression can only narrow down an existing query using <code>AND</code>.</p>
@@ -1005,7 +1044,7 @@ expression can only narrow down an existing query using <code>AND</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="delimiter-based-tokenization-analysis"><a class="anchor" href="#delimiter-based-tokenization-analysis"></a><a class="link" href="#delimiter-based-tokenization-analysis">Delimiter based Tokenization Analysis</a></h4>
+<h4 id="delimiter-based-tokenization-analysis"><a class="anchor" href="#delimiter-based-tokenization-analysis"></a>Delimiter based Tokenization Analysis</h4>
 <div class="paragraph">
 <p>A simple text analysis provided is delimiter based tokenization. This
 provides an alternative to indexing collections, as delimiter separated
@@ -1031,7 +1070,7 @@ cqlsh:demo&gt; SELECT * FROM sasi WHERE aliases LIKE 'Mikey' ALLOW FILTERING;
 </div>
 </div>
 <div class="sect3">
-<h4 id="text-analysis-tokenization-and-stemming"><a class="anchor" href="#text-analysis-tokenization-and-stemming"></a><a class="link" href="#text-analysis-tokenization-and-stemming">Text Analysis (Tokenization and Stemming)</a></h4>
+<h4 id="text-analysis-tokenization-and-stemming"><a class="anchor" href="#text-analysis-tokenization-and-stemming"></a>Text Analysis (Tokenization and Stemming)</h4>
 <div class="paragraph">
 <p>Lastly, to demonstrate text analysis an additional column is needed on
 the table. Its definition, index, and statements to update rows are
@@ -1116,7 +1155,7 @@ cqlsh:demo&gt; SELECT * FROM sasi WHERE bio LIKE 'soft eng';
 </div>
 </div>
 <div class="sect2">
-<h3 id="implementation-details"><a class="anchor" href="#implementation-details"></a><a class="link" href="#implementation-details">Implementation Details</a></h3>
+<h3 id="implementation-details"><a class="anchor" href="#implementation-details"></a>Implementation Details</h3>
 <div class="paragraph">
 <p>While SASI, at the surface, is simply an implementation of the <code>Index</code>
 interface, at its core there are several data structures and algorithms
@@ -1146,7 +1185,7 @@ of work done. Searching is then performed using an efficient method that
 streams data off disk as needed.</p>
 </div>
 <div class="sect3">
-<h4 id="indexing"><a class="anchor" href="#indexing"></a><a class="link" href="#indexing">Indexing</a></h4>
+<h4 id="indexing"><a class="anchor" href="#indexing"></a>Indexing</h4>
 <div class="paragraph">
 <p>Per SSTable, SASI writes an index file for each indexed column. The data
 for these files is built in memory using the
@@ -1167,7 +1206,7 @@ its
 class.</p>
 </div>
 <div class="sect4">
-<h5 id="ondiskindexbuilder"><a class="anchor" href="#ondiskindexbuilder"></a><a class="link" href="#ondiskindexbuilder">OnDiskIndex(Builder)</a></h5>
+<h5 id="ondiskindexbuilder"><a class="anchor" href="#ondiskindexbuilder"></a>OnDiskIndex(Builder)</h5>
 <div class="paragraph">
 <p>Each
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/disk/OnDiskIndex.java"><code>OnDiskIndex</code></a>
@@ -1209,7 +1248,7 @@ efficient iteration of large ranges of e.g. timestamps. The index
 </div>
 </div>
 <div class="sect4">
-<h5 id="tokentreebuilder"><a class="anchor" href="#tokentreebuilder"></a><a class="link" href="#tokentreebuilder">TokenTree(Builder)</a></h5>
+<h5 id="tokentreebuilder"><a class="anchor" href="#tokentreebuilder"></a>TokenTree(Builder)</h5>
 <div class="paragraph">
 <p>The
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/disk/TokenTree.java"><code>TokenTree</code></a>
@@ -1235,7 +1274,7 @@ heavily at query time.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="indexmemtable"><a class="anchor" href="#indexmemtable"></a><a class="link" href="#indexmemtable">IndexMemtable</a></h5>
+<h5 id="indexmemtable"><a class="anchor" href="#indexmemtable"></a>IndexMemtable</h5>
 <div class="paragraph">
 <p>The
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/memory/IndexMemtable.java"><code>IndexMemtable</code></a>
@@ -1276,7 +1315,7 @@ is built on top of <code>java.util.concurrent.ConcurrentSkipListSet</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="querying"><a class="anchor" href="#querying"></a><a class="link" href="#querying">Querying</a></h4>
+<h4 id="querying"><a class="anchor" href="#querying"></a>Querying</h4>
 <div class="paragraph">
 <p>Responsible for converting the internal <code>IndexExpression</code> representation
 into SASI’s
@@ -1298,7 +1337,7 @@ to satisfy the query. The
 similar to its counterpart, performs set intersections over its data.</p>
 </div>
 <div class="sect4">
-<h5 id="queryplan"><a class="anchor" href="#queryplan"></a><a class="link" href="#queryplan">QueryPlan</a></h5>
+<h5 id="queryplan"><a class="anchor" href="#queryplan"></a>QueryPlan</h5>
 <div class="paragraph">
 <p>The
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/plan/QueryPlan.java"><code>QueryPlan</code></a>
@@ -1343,7 +1382,7 @@ across SSTables. The concurrency factor is controlled by the
 <code>1</code>.</p>
 </div>
 <div class="sect5">
-<h6 id="querycontroller"><a class="anchor" href="#querycontroller"></a><a class="link" href="#querycontroller">QueryController</a></h6>
+<h6 id="querycontroller"><a class="anchor" href="#querycontroller"></a>QueryController</h6>
 <div class="paragraph">
 <p>Each
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/plan/QueryPlan.java"><code>QueryPlan</code></a>
@@ -1363,7 +1402,7 @@ to ensure the time-bound is enforced.</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="queryplan-optimizations"><a class="anchor" href="#queryplan-optimizations"></a><a class="link" href="#queryplan-optimizations">QueryPlan Optimizations</a></h6>
+<h6 id="queryplan-optimizations"><a class="anchor" href="#queryplan-optimizations"></a>QueryPlan Optimizations</h6>
 <div class="paragraph">
 <p>While in the analysis phase, the
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/plan/QueryPlan.java"><code>QueryPlan</code></a>
@@ -1476,7 +1515,7 @@ query:</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="operations-and-expressions"><a class="anchor" href="#operations-and-expressions"></a><a class="link" href="#operations-and-expressions">Operations and Expressions</a></h5>
+<h5 id="operations-and-expressions"><a class="anchor" href="#operations-and-expressions"></a>Operations and Expressions</h5>
 <div class="paragraph">
 <p>As discussed, the
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/plan/QueryPlan.java"><code>QueryPlan</code></a>
@@ -1511,7 +1550,7 @@ the code</a>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="rangeunionintersectioniterator"><a class="anchor" href="#rangeunionintersectioniterator"></a><a class="link" href="#rangeunionintersectioniterator">Range(Union|Intersection)Iterator</a></h5>
+<h5 id="rangeunionintersectioniterator"><a class="anchor" href="#rangeunionintersectioniterator"></a>Range(Union|Intersection)Iterator</h5>
 <div class="paragraph">
 <p>The abstract <code>RangeIterator</code> class provides a unified interface over the
 two main operations performed by SASI at various layers in the execution
@@ -1572,7 +1611,7 @@ is chosen.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="the-sasiindex-class"><a class="anchor" href="#the-sasiindex-class"></a><a class="link" href="#the-sasiindex-class">The SASIIndex Class</a></h4>
+<h4 id="the-sasiindex-class"><a class="anchor" href="#the-sasiindex-class"></a>The SASIIndex Class</h4>
 <div class="paragraph">
 <p>The above components are glued together by the
 <a href="https://github.com/apache/cassandra/blob/trunk/src/java/org/apache/cassandra/index/sasi/SASIIndex.java"><code>SASIIndex</code></a>
@@ -1593,14 +1632,14 @@ and update e.g. latency metrics exposed by SASI.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="cassandra-internal-changes"><a class="anchor" href="#cassandra-internal-changes"></a><a class="link" href="#cassandra-internal-changes">Cassandra Internal Changes</a></h4>
+<h4 id="cassandra-internal-changes"><a class="anchor" href="#cassandra-internal-changes"></a>Cassandra Internal Changes</h4>
 <div class="paragraph">
 <p>To support the above changes and integrate them into Cassandra a few
 minor internal changes were made to Cassandra itself. These are
 described here.</p>
 </div>
 <div class="sect4">
-<h5 id="sstable-write-life-cycle-notifications"><a class="anchor" href="#sstable-write-life-cycle-notifications"></a><a class="link" href="#sstable-write-life-cycle-notifications">SSTable Write Life-cycle Notifications</a></h5>
+<h5 id="sstable-write-life-cycle-notifications"><a class="anchor" href="#sstable-write-life-cycle-notifications"></a>SSTable Write Life-cycle Notifications</h5>
 <div class="paragraph">
 <p>The <code>SSTableFlushObserver</code> is an observer pattern-like interface, whose
 sub-classes can register to be notified about events in the life-cycle
@@ -1612,7 +1651,7 @@ is the only current subclass.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="limitations-and-caveats"><a class="anchor" href="#limitations-and-caveats"></a><a class="link" href="#limitations-and-caveats">Limitations and Caveats</a></h4>
+<h4 id="limitations-and-caveats"><a class="anchor" href="#limitations-and-caveats"></a>Limitations and Caveats</h4>
 <div class="paragraph">
 <p>The following are items that can be addressed in future updates but are
 not available in this repository or are not currently implemented.</p>
@@ -1633,7 +1672,7 @@ changes are made to Cassandra itself to support them.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="contributors"><a class="anchor" href="#contributors"></a><a class="link" href="#contributors">Contributors</a></h4>
+<h4 id="contributors"><a class="anchor" href="#contributors"></a>Contributors</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1664,11 +1703,11 @@ changes are made to Cassandra itself to support them.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1696,16 +1735,20 @@ changes are made to Cassandra itself to support them.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/cql/SASI.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/cql/SASI.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1723,6 +1766,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

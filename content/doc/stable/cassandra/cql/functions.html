@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/cql/functions.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,13 +763,13 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/cql/functions.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/cql/functions.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
 <article class="doc">
 <div class="sect1">
-<h2 id="functions"><a class="anchor" href="#functions"></a><a class="link" href="#functions">Functions</a></h2>
+<h2 id="functions"><a class="anchor" href="#functions"></a>Functions</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>CQL supports 2 main categories of functions:</p>
@@ -778,11 +817,11 @@ enable them.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="scalar-functions"><a class="anchor" href="#scalar-functions"></a><a class="link" href="#scalar-functions">Scalar functions</a></h3>
+<h3 id="scalar-functions"><a class="anchor" href="#scalar-functions"></a>Scalar functions</h3>
 <div class="sect3">
-<h4 id="scalar-native-functions"><a class="anchor" href="#scalar-native-functions"></a><a class="link" href="#scalar-native-functions">Native functions</a></h4>
+<h4 id="scalar-native-functions"><a class="anchor" href="#scalar-native-functions"></a>Native functions</h4>
 <div class="sect4">
-<h5 id="cast"><a class="anchor" href="#cast"></a><a class="link" href="#cast">Cast</a></h5>
+<h5 id="cast"><a class="anchor" href="#cast"></a>Cast</h5>
 <div class="paragraph">
 <p>The <code>cast</code> function can be used to converts one native datatype to
 another.</p>
@@ -894,7 +933,7 @@ double value 1 will be converted to the text value '1.0'. For instance:</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="token"><a class="anchor" href="#token"></a><a class="link" href="#token">Token</a></h5>
+<h5 id="token"><a class="anchor" href="#token"></a>Token</h5>
 <div class="paragraph">
 <p>The <code>token</code> function computes the token for a given partition key.
 The exact signature of the token function depends on the table concerned and the partitioner used by the cluster.</p>
@@ -946,16 +985,16 @@ The returned type will be <code>bigint</code>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="uuid"><a class="anchor" href="#uuid"></a><a class="link" href="#uuid">Uuid</a></h5>
+<h5 id="uuid"><a class="anchor" href="#uuid"></a>Uuid</h5>
 <div class="paragraph">
 <p>The <code>uuid</code> function takes no parameters and generates a random type 4
 uuid suitable for use in <code>INSERT</code> or <code>UPDATE</code> statements.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="timeuuid-functions"><a class="anchor" href="#timeuuid-functions"></a><a class="link" href="#timeuuid-functions">Timeuuid functions</a></h5>
+<h5 id="timeuuid-functions"><a class="anchor" href="#timeuuid-functions"></a>Timeuuid functions</h5>
 <div class="sect5">
-<h6 id="now"><a class="anchor" href="#now"></a><a class="link" href="#now"><code>now</code></a></h6>
+<h6 id="now"><a class="anchor" href="#now"></a><code>now</code></h6>
 <div class="paragraph">
 <p>The <code>now</code> function takes no arguments and generates, on the coordinator
 node, a new unique timeuuid at the time the function is invoked. Note
@@ -979,7 +1018,7 @@ that this method is useful for insertion but is largely non-sensical in
 </div>
 </div>
 <div class="sect5">
-<h6 id="mintimeuuid-and-maxtimeuuid"><a class="anchor" href="#mintimeuuid-and-maxtimeuuid"></a><a class="link" href="#mintimeuuid-and-maxtimeuuid"><code>minTimeuuid</code> and <code>maxTimeuuid</code></a></h6>
+<h6 id="mintimeuuid-and-maxtimeuuid"><a class="anchor" href="#mintimeuuid-and-maxtimeuuid"></a><code>minTimeuuid</code> and <code>maxTimeuuid</code></h6>
 <div class="paragraph">
 <p>The <code>minTimeuuid</code> function takes a <code>timestamp</code> value <code>t</code>, either a timestamp or a date string.
 It returns a <em>fake</em> <code>timeuuid</code> corresponding to the <em>smallest</em> possible <code>timeuuid</code> for timestamp <code>t</code>.
@@ -1020,9 +1059,9 @@ Thus, only use these methods for <strong>querying</strong>, not for <strong>inse
 </div>
 </div>
 <div class="sect4">
-<h5 id="datetime-functions"><a class="anchor" href="#datetime-functions"></a><a class="link" href="#datetime-functions">Datetime functions</a></h5>
+<h5 id="datetime-functions"><a class="anchor" href="#datetime-functions"></a>Datetime functions</h5>
 <div class="sect5">
-<h6 id="retrieving-the-current-datetime"><a class="anchor" href="#retrieving-the-current-datetime"></a><a class="link" href="#retrieving-the-current-datetime">Retrieving the current date/time</a></h6>
+<h6 id="retrieving-the-current-datetime"><a class="anchor" href="#retrieving-the-current-datetime"></a>Retrieving the current date/time</h6>
 <div class="paragraph">
 <p>The following functions can be used to retrieve the date/time at the
 time where the function is invoked:</p>
@@ -1067,7 +1106,7 @@ time where the function is invoked:</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="time-conversion-functions"><a class="anchor" href="#time-conversion-functions"></a><a class="link" href="#time-conversion-functions">Time conversion functions</a></h6>
+<h6 id="time-conversion-functions"><a class="anchor" href="#time-conversion-functions"></a>Time conversion functions</h6>
 <div class="paragraph">
 <p>A number of functions are provided to convert a <code>timeuuid</code>, a <code>timestamp</code> or a <code>date</code> into another <code>native</code> type.</p>
 </div>
@@ -1135,7 +1174,7 @@ time where the function is invoked:</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="blob-conversion-functions"><a class="anchor" href="#blob-conversion-functions"></a><a class="link" href="#blob-conversion-functions">Blob conversion functions</a></h5>
+<h5 id="blob-conversion-functions"><a class="anchor" href="#blob-conversion-functions"></a>Blob conversion functions</h5>
 <div class="paragraph">
 <p>A number of functions are provided to convert the native types into
 binary data, or a <code>blob</code>.
@@ -1146,7 +1185,7 @@ For example, <code>bigintAsBlob(3)</code> returns <code>0x0000000000000003</code
 </div>
 </div>
 <div class="sect3">
-<h4 id="user-defined-scalar-functions"><a class="anchor" href="#user-defined-scalar-functions"></a><a class="link" href="#user-defined-scalar-functions">User-defined functions</a></h4>
+<h4 id="user-defined-scalar-functions"><a class="anchor" href="#user-defined-scalar-functions"></a>User-defined functions</h4>
 <div class="paragraph">
 <p>User-defined functions (UDFs) execute user-provided code in Cassandra.
 By default, Cassandra supports defining functions in <em>Java</em> and <em>JavaScript</em>.
@@ -1261,7 +1300,7 @@ import com.datastax.driver.core.UDTValue;</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="create-function-statement"><a class="anchor" href="#create-function-statement"></a><a class="link" href="#create-function-statement">CREATE FUNCTION statement</a></h4>
+<h4 id="create-function-statement"><a class="anchor" href="#create-function-statement"></a>CREATE FUNCTION statement</h4>
 <div class="paragraph">
 <p>Creating a new user-defined function uses the <code>CREATE FUNCTION</code> statement:</p>
 </div>
@@ -1318,7 +1357,7 @@ exist.
 </ul>
 </div>
 <div class="sect4">
-<h5 id="function-signature"><a class="anchor" href="#function-signature"></a><a class="link" href="#function-signature">Function Signature</a></h5>
+<h5 id="function-signature"><a class="anchor" href="#function-signature"></a>Function Signature</h5>
 <div class="paragraph">
 <p>Signatures are used to distinguish individual functions. The signature consists of a fully-qualified function name of the &lt;keyspace&gt;.&lt;function_name&gt; and a concatenated list of all the argument types.</p>
 </div>
@@ -1332,7 +1371,7 @@ User-defined functions are not allowed in the system keyspaces.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="drop-function-statement"><a class="anchor" href="#drop-function-statement"></a><a class="link" href="#drop-function-statement">DROP FUNCTION statement</a></h4>
+<h4 id="drop-function-statement"><a class="anchor" href="#drop-function-statement"></a>DROP FUNCTION statement</h4>
 <div class="paragraph">
 <p>Dropping a function uses the <code>DROP FUNCTION</code> statement:</p>
 </div>
@@ -1360,7 +1399,7 @@ DROP FUNCTION afunction ( text );</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="aggregate-functions"><a class="anchor" href="#aggregate-functions"></a><a class="link" href="#aggregate-functions">Aggregate functions</a></h3>
+<h3 id="aggregate-functions"><a class="anchor" href="#aggregate-functions"></a>Aggregate functions</h3>
 <div class="paragraph">
 <p>Aggregate functions work on a set of rows.
 Values for each row are input, to return a single value for the set of rows aggregated.</p>
@@ -1370,9 +1409,9 @@ Values for each row are input, to return a single value for the set of rows aggr
 returned for them will be the ones of the first row matching the query.</p>
 </div>
 <div class="sect3">
-<h4 id="native-aggregates"><a class="anchor" href="#native-aggregates"></a><a class="link" href="#native-aggregates">Native aggregates</a></h4>
+<h4 id="native-aggregates"><a class="anchor" href="#native-aggregates"></a>Native aggregates</h4>
 <div class="sect4">
-<h5 id="count-function"><a class="anchor" href="#count-function"></a><a class="link" href="#count-function">Count</a></h5>
+<h5 id="count-function"><a class="anchor" href="#count-function"></a>Count</h5>
 <div class="paragraph">
 <p>The <code>count</code> function can be used to count the rows returned by a query.</p>
 </div>
@@ -1395,7 +1434,7 @@ SELECT COUNT (1) FROM plays;</code></pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="max-and-min"><a class="anchor" href="#max-and-min"></a><a class="link" href="#max-and-min">Max and Min</a></h5>
+<h5 id="max-and-min"><a class="anchor" href="#max-and-min"></a>Max and Min</h5>
 <div class="paragraph">
 <p>The <code>max</code> and <code>min</code> functions compute the maximum and the minimum value returned by a query for a given column.</p>
 </div>
@@ -1409,7 +1448,7 @@ SELECT COUNT (1) FROM plays;</code></pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="sum"><a class="anchor" href="#sum"></a><a class="link" href="#sum">Sum</a></h5>
+<h5 id="sum"><a class="anchor" href="#sum"></a>Sum</h5>
 <div class="paragraph">
 <p>The <code>sum</code> function sums up all the values returned by a query for a given column.</p>
 </div>
@@ -1423,7 +1462,7 @@ SELECT COUNT (1) FROM plays;</code></pre>
 </div>
 </div>
 <div class="sect4">
-<h5 id="avg"><a class="anchor" href="#avg"></a><a class="link" href="#avg">Avg</a></h5>
+<h5 id="avg"><a class="anchor" href="#avg"></a>Avg</h5>
 <div class="paragraph">
 <p>The <code>avg</code> function computes the average of all the values returned by a query for a given column.</p>
 </div>
@@ -1438,7 +1477,7 @@ SELECT COUNT (1) FROM plays;</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="user-defined-aggregates-functions"><a class="anchor" href="#user-defined-aggregates-functions"></a><a class="link" href="#user-defined-aggregates-functions">User-Defined Aggregates (UDAs)</a></h4>
+<h4 id="user-defined-aggregates-functions"><a class="anchor" href="#user-defined-aggregates-functions"></a>User-Defined Aggregates (UDAs)</h4>
 <div class="paragraph">
 <p>User-defined aggregates allow the creation of custom aggregate functions.
 User-defined aggregates can be used in <code>SELECT</code> statement.</p>
@@ -1505,7 +1544,7 @@ SELECT test.average(val) FROM atable;</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="create-aggregate-statement"><a class="anchor" href="#create-aggregate-statement"></a><a class="link" href="#create-aggregate-statement">CREATE AGGREGATE statement</a></h4>
+<h4 id="create-aggregate-statement"><a class="anchor" href="#create-aggregate-statement"></a>CREATE AGGREGATE statement</h4>
 <div class="paragraph">
 <p>Creating (or replacing) a user-defined aggregate function uses the
 <code>CREATE AGGREGATE</code> statement:</p>
@@ -1551,7 +1590,7 @@ If a <code>FINALFUNC</code> is defined, it is the return type of that function.<
 </div>
 </div>
 <div class="sect3">
-<h4 id="drop-aggregate-statement"><a class="anchor" href="#drop-aggregate-statement"></a><a class="link" href="#drop-aggregate-statement">DROP AGGREGATE statement</a></h4>
+<h4 id="drop-aggregate-statement"><a class="anchor" href="#drop-aggregate-statement"></a>DROP AGGREGATE statement</h4>
 <div class="paragraph">
 <p>Dropping an user-defined aggregate function uses the <code>DROP AGGREGATE</code>
 statement:</p>
@@ -1593,11 +1632,11 @@ signature does not exist.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1625,16 +1664,20 @@ signature does not exist.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/cql/functions.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/cql/functions.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1652,6 +1695,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

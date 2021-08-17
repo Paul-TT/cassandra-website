@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/configuration/cass_logback_xml_file.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/configuration/cass_logback_xml_file.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/configuration/cass_logback_xml_file.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -740,10 +779,10 @@ can also be set using <code>nodetool setlogginglevels</code>.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="options"><a class="anchor" href="#options"></a><a class="link" href="#options">Options</a></h2>
+<h2 id="options"><a class="anchor" href="#options"></a>Options</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="appender-nameappender_choiceappender"><a class="anchor" href="#appender-nameappender_choiceappender"></a><a class="link" href="#appender-nameappender_choiceappender"><code>appender name="&lt;appender_choice&gt;"&#8230;&#8203;&lt;/appender&gt;</code></a></h3>
+<h3 id="appender-nameappender_choiceappender"><a class="anchor" href="#appender-nameappender_choiceappender"></a><code>appender name="&lt;appender_choice&gt;"&#8230;&#8203;&lt;/appender&gt;</code></h3>
 <div class="paragraph">
 <p>Specify log type and settings. Possible appender names are: <code>SYSTEMLOG</code>,
 <code>DEBUGLOG</code>, <code>ASYNCDEBUGLOG</code>, and <code>STDOUT</code>. <code>SYSTEMLOG</code> ensures that WARN
@@ -759,7 +798,7 @@ class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="file-filename-file"><a class="anchor" href="#file-filename-file"></a><a class="link" href="#file-filename-file"><code>&lt;file&gt; &lt;filename&gt; &lt;/file&gt;</code></a></h3>
+<h3 id="file-filename-file"><a class="anchor" href="#file-filename-file"></a><code>&lt;file&gt; &lt;filename&gt; &lt;/file&gt;</code></h3>
 <div class="paragraph">
 <p>Specify the filename for a log.</p>
 </div>
@@ -768,7 +807,7 @@ class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="level-log_level-level"><a class="anchor" href="#level-log_level-level"></a><a class="link" href="#level-log_level-level"><code>&lt;level&gt; &lt;log_level&gt; &lt;/level&gt;</code></a></h3>
+<h3 id="level-log_level-level"><a class="anchor" href="#level-log_level-level"></a><code>&lt;level&gt; &lt;log_level&gt; &lt;/level&gt;</code></h3>
 <div class="paragraph">
 <p>Specify the level for a log. Part of the filter. Levels are: <code>ALL</code>,
 <code>TRACE</code>, <code>DEBUG</code>, <code>INFO</code>, <code>WARN</code>, <code>ERROR</code>, <code>OFF</code>. <code>TRACE</code> creates the
@@ -800,7 +839,7 @@ configuration.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="rollingpolicy-classrolling_policy_choice-filenamepatternpattern_infofilenamepattern-rollingpolicy"><a class="anchor" href="#rollingpolicy-classrolling_policy_choice-filenamepatternpattern_infofilenamepattern-rollingpolicy"></a><a class="link" href="#rollingpolicy-classrolling_policy_choice-filenamepatternpattern_infofilenamepattern-rollingpolicy"><code>&lt;rollingPolicy class="&lt;rolling_policy_choice&gt;" &lt;fileNamePattern&gt;&lt;pattern_info&gt;&lt;/fileNamePattern&gt; &#8230;&#8203; &lt;/rollingPolicy&gt;</code></a></h3>
+<h3 id="rollingpolicy-classrolling_policy_choice-filenamepatternpattern_infofilenamepattern-rollingpolicy"><a class="anchor" href="#rollingpolicy-classrolling_policy_choice-filenamepatternpattern_infofilenamepattern-rollingpolicy"></a><code>&lt;rollingPolicy class="&lt;rolling_policy_choice&gt;" &lt;fileNamePattern&gt;&lt;pattern_info&gt;&lt;/fileNamePattern&gt; &#8230;&#8203; &lt;/rollingPolicy&gt;</code></h3>
 <div class="paragraph">
 <p>Specify the policy for rolling logs over to an archive.</p>
 </div>
@@ -810,7 +849,7 @@ class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy"&gt;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="filenamepattern-pattern_info-filenamepattern"><a class="anchor" href="#filenamepattern-pattern_info-filenamepattern"></a><a class="link" href="#filenamepattern-pattern_info-filenamepattern"><code>&lt;fileNamePattern&gt; &lt;pattern_info&gt; &lt;/fileNamePattern&gt;</code></a></h3>
+<h3 id="filenamepattern-pattern_info-filenamepattern"><a class="anchor" href="#filenamepattern-pattern_info-filenamepattern"></a><code>&lt;fileNamePattern&gt; &lt;pattern_info&gt; &lt;/fileNamePattern&gt;</code></h3>
 <div class="paragraph">
 <p>Specify the pattern information for rolling over the log to archive.
 Part of the rolling policy.</p>
@@ -821,7 +860,7 @@ Part of the rolling policy.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="maxfilesize-size-maxfilesize"><a class="anchor" href="#maxfilesize-size-maxfilesize"></a><a class="link" href="#maxfilesize-size-maxfilesize"><code>&lt;maxFileSize&gt; &lt;size&gt; &lt;/maxFileSize&gt;</code></a></h3>
+<h3 id="maxfilesize-size-maxfilesize"><a class="anchor" href="#maxfilesize-size-maxfilesize"></a><code>&lt;maxFileSize&gt; &lt;size&gt; &lt;/maxFileSize&gt;</code></h3>
 <div class="paragraph">
 <p>Specify the maximum file size to trigger rolling a log. Part of the
 rolling policy.</p>
@@ -831,7 +870,7 @@ rolling policy.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="maxhistory-number_of_days-maxhistory"><a class="anchor" href="#maxhistory-number_of_days-maxhistory"></a><a class="link" href="#maxhistory-number_of_days-maxhistory"><code>&lt;maxHistory&gt; &lt;number_of_days&gt; &lt;/maxHistory&gt;</code></a></h3>
+<h3 id="maxhistory-number_of_days-maxhistory"><a class="anchor" href="#maxhistory-number_of_days-maxhistory"></a><code>&lt;maxHistory&gt; &lt;number_of_days&gt; &lt;/maxHistory&gt;</code></h3>
 <div class="paragraph">
 <p>Specify the maximum history in days to trigger rolling a log. Part of
 the rolling policy.</p>
@@ -841,7 +880,7 @@ the rolling policy.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="encoder-patternpattern-encoder"><a class="anchor" href="#encoder-patternpattern-encoder"></a><a class="link" href="#encoder-patternpattern-encoder"><code>&lt;encoder&gt; &lt;pattern&gt;&#8230;&#8203;&lt;/pattern&gt; &lt;/encoder&gt;</code></a></h3>
+<h3 id="encoder-patternpattern-encoder"><a class="anchor" href="#encoder-patternpattern-encoder"></a><code>&lt;encoder&gt; &lt;pattern&gt;&#8230;&#8203;&lt;/pattern&gt; &lt;/encoder&gt;</code></h3>
 <div class="paragraph">
 <p>Specify the format of the message. Part of the rolling policy.</p>
 </div>
@@ -852,7 +891,7 @@ the rolling policy.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="contents-of-default-logback-xml"><a class="anchor" href="#contents-of-default-logback-xml"></a><a class="link" href="#contents-of-default-logback-xml">Contents of default <code>logback.xml</code></a></h3>
+<h3 id="contents-of-default-logback-xml"><a class="anchor" href="#contents-of-default-logback-xml"></a>Contents of default <code>logback.xml</code></h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;configuration scan="true" scanPeriod="60 seconds"&gt;
@@ -945,11 +984,11 @@ the rolling policy.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -977,16 +1016,20 @@ the rolling policy.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/configuration/cass_logback_xml_file.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/configuration/cass_logback_xml_file.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1004,6 +1047,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

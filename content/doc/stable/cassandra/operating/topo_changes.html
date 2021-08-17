@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/operating/topo_changes.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,14 +763,14 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/operating/topo_changes.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/operating/topo_changes.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
 <article class="doc">
 <h1 class="page">Adding, replacing, moving and removing nodes</h1>
 <div class="sect1">
-<h2 id="bootstrap"><a class="anchor" href="#bootstrap"></a><a class="link" href="#bootstrap">Bootstrap</a></h2>
+<h2 id="bootstrap"><a class="anchor" href="#bootstrap"></a>Bootstrap</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Adding new nodes is called "bootstrapping". The <code>num_tokens</code> parameter
@@ -740,7 +779,7 @@ be assigned during bootstrap. The tokens define the sections of the ring
 (token ranges) the node will become responsible for.</p>
 </div>
 <div class="sect2">
-<h3 id="token-allocation"><a class="anchor" href="#token-allocation"></a><a class="link" href="#token-allocation">Token allocation</a></h3>
+<h3 id="token-allocation"><a class="anchor" href="#token-allocation"></a>Token allocation</h3>
 <div class="paragraph">
 <p>With the default token allocation algorithm the new node will pick
 <code>num_tokens</code> random tokens to become responsible for. Since tokens are
@@ -759,7 +798,7 @@ option <code>-Dcassandra.allocate_tokens_for_keyspace=&lt;keyspace&gt;</code>, w
 information to optimize token assignment for.</p>
 </div>
 <div class="sect3">
-<h4 id="manual-token-assignment"><a class="anchor" href="#manual-token-assignment"></a><a class="link" href="#manual-token-assignment">Manual token assignment</a></h4>
+<h4 id="manual-token-assignment"><a class="anchor" href="#manual-token-assignment"></a>Manual token assignment</h4>
 <div class="paragraph">
 <p>You may specify a comma-separated list of tokens manually with the
 <code>initial_token</code> <code>cassandra.yaml</code> parameter, and if that is specified
@@ -770,7 +809,7 @@ node with its previous tokens.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="range-streaming"><a class="anchor" href="#range-streaming"></a><a class="link" href="#range-streaming">Range streaming</a></h3>
+<h3 id="range-streaming"><a class="anchor" href="#range-streaming"></a>Range streaming</h3>
 <div class="paragraph">
 <p>After the tokens are allocated, the joining node will pick current
 replicas of the token ranges it will become responsible for to stream
@@ -786,7 +825,7 @@ unavailable replica, set the JVM flag
 </div>
 </div>
 <div class="sect2">
-<h3 id="resuming-failedhanged-bootstrap"><a class="anchor" href="#resuming-failedhanged-bootstrap"></a><a class="link" href="#resuming-failedhanged-bootstrap">Resuming failed/hanged bootstrap</a></h3>
+<h3 id="resuming-failedhanged-bootstrap"><a class="anchor" href="#resuming-failedhanged-bootstrap"></a>Resuming failed/hanged bootstrap</h3>
 <div class="paragraph">
 <p>On 2.2+, if the bootstrap process fails, it&#8217;s possible to resume
 bootstrap from the previous saved state by calling
@@ -802,7 +841,7 @@ again.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="manual-bootstrapping"><a class="anchor" href="#manual-bootstrapping"></a><a class="link" href="#manual-bootstrapping">Manual bootstrapping</a></h3>
+<h3 id="manual-bootstrapping"><a class="anchor" href="#manual-bootstrapping"></a>Manual bootstrapping</h3>
 <div class="paragraph">
 <p>It&#8217;s possible to skip the bootstrapping process entirely and join the
 ring straight away by setting the hidden parameter
@@ -813,7 +852,7 @@ backup or creating a new data-center.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="removing-nodes"><a class="anchor" href="#removing-nodes"></a><a class="link" href="#removing-nodes">Removing nodes</a></h2>
+<h2 id="removing-nodes"><a class="anchor" href="#removing-nodes"></a>Removing nodes</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>You can take a node out of the cluster with <code>nodetool decommission</code> to a
@@ -831,7 +870,7 @@ the ring, it should be removed manually.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="moving-nodes"><a class="anchor" href="#moving-nodes"></a><a class="link" href="#moving-nodes">Moving nodes</a></h2>
+<h2 id="moving-nodes"><a class="anchor" href="#moving-nodes"></a>Moving nodes</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>When <code>num_tokens: 1</code> it&#8217;s possible to move the node position in the ring
@@ -842,7 +881,7 @@ efficient than decommission + bootstrap. After moving a node,
 </div>
 </div>
 <div class="sect1">
-<h2 id="replacing-a-dead-node"><a class="anchor" href="#replacing-a-dead-node"></a><a class="link" href="#replacing-a-dead-node">Replacing a dead node</a></h2>
+<h2 id="replacing-a-dead-node"><a class="anchor" href="#replacing-a-dead-node"></a>Replacing a dead node</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In order to replace a dead node, start cassandra with the JVM startup
@@ -895,7 +934,7 @@ replacement takes longer than <code>max_hint_window_in_ms</code>.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="monitoring-progress"><a class="anchor" href="#monitoring-progress"></a><a class="link" href="#monitoring-progress">Monitoring progress</a></h2>
+<h2 id="monitoring-progress"><a class="anchor" href="#monitoring-progress"></a>Monitoring progress</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Bootstrap, replace, move and remove progress can be monitored using
@@ -905,7 +944,7 @@ operations.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="cleanup-data-after-range-movements"><a class="anchor" href="#cleanup-data-after-range-movements"></a><a class="link" href="#cleanup-data-after-range-movements">Cleanup data after range movements</a></h2>
+<h2 id="cleanup-data-after-range-movements"><a class="anchor" href="#cleanup-data-after-range-movements"></a>Cleanup data after range movements</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>As a safety measure, Cassandra does not automatically remove data from
@@ -924,11 +963,11 @@ still be counted against the load on that node.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -956,16 +995,20 @@ still be counted against the load on that node.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/operating/topo_changes.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/operating/topo_changes.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -983,6 +1026,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/operating/metrics.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/operating/metrics.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/operating/metrics.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -748,7 +787,7 @@ an external monitoring system to aggregate them.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="metric-types"><a class="anchor" href="#metric-types"></a><a class="link" href="#metric-types">Metric Types</a></h2>
+<h2 id="metric-types"><a class="anchor" href="#metric-types"></a>Metric Types</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>All metrics reported by cassandra fit into one of the following types.</p>
@@ -795,7 +834,7 @@ fifteen-minute exponentially-weighted moving average throughputs.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="table-metrics"><a class="anchor" href="#table-metrics"></a><a class="link" href="#table-metrics">Table Metrics</a></h2>
+<h2 id="table-metrics"><a class="anchor" href="#table-metrics"></a>Table Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Each table in Cassandra has metrics responsible for tracking its state
@@ -1985,7 +2024,7 @@ are prepared vs unprepared.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="dropped-metrics"><a class="anchor" href="#dropped-metrics"></a><a class="link" href="#dropped-metrics">DroppedMessage Metrics</a></h2>
+<h2 id="dropped-metrics"><a class="anchor" href="#dropped-metrics"></a>DroppedMessage Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to tracking dropped messages for different types of
@@ -2101,7 +2140,7 @@ requests. Dropped writes are stored and retried by <code>Hinted Handoff</code></
 </div>
 </div>
 <div class="sect1">
-<h2 id="streaming-metrics"><a class="anchor" href="#streaming-metrics"></a><a class="link" href="#streaming-metrics">Streaming Metrics</a></h2>
+<h2 id="streaming-metrics"><a class="anchor" href="#streaming-metrics"></a>Streaming Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics reported during <code>Streaming</code> operations, such as repair,
@@ -2157,7 +2196,7 @@ from this node.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="compaction-metrics"><a class="anchor" href="#compaction-metrics"></a><a class="link" href="#compaction-metrics">Compaction Metrics</a></h2>
+<h2 id="compaction-metrics"><a class="anchor" href="#compaction-metrics"></a>Compaction Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to <code>Compaction</code> work.</p>
@@ -2226,7 +2265,7 @@ keyspace and then table name. This info is also kept in <code>Table Metrics</cod
 </div>
 </div>
 <div class="sect1">
-<h2 id="commitlog-metrics"><a class="anchor" href="#commitlog-metrics"></a><a class="link" href="#commitlog-metrics">CommitLog Metrics</a></h2>
+<h2 id="commitlog-metrics"><a class="anchor" href="#commitlog-metrics"></a>CommitLog Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to the <code>CommitLog</code></p>
@@ -2296,7 +2335,7 @@ Periodic this is only occurs when the sync is lagging its sync interval.</p></td
 </div>
 </div>
 <div class="sect1">
-<h2 id="storage-metrics"><a class="anchor" href="#storage-metrics"></a><a class="link" href="#storage-metrics">Storage Metrics</a></h2>
+<h2 id="storage-metrics"><a class="anchor" href="#storage-metrics"></a>Storage Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to the storage engine.</p>
@@ -2359,7 +2398,7 @@ currently.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="handoff-metrics"><a class="anchor" href="#handoff-metrics"></a><a class="link" href="#handoff-metrics">HintedHandoff Metrics</a></h2>
+<h2 id="handoff-metrics"><a class="anchor" href="#handoff-metrics"></a>HintedHandoff Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to Hinted Handoff. There are also some metrics related
@@ -2437,7 +2476,7 @@ configured hint window.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="hintsservice-metrics"><a class="anchor" href="#hintsservice-metrics"></a><a class="link" href="#hintsservice-metrics">HintsService Metrics</a></h2>
+<h2 id="hintsservice-metrics"><a class="anchor" href="#hintsservice-metrics"></a>HintsService Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to the Hints delivery service. There are also some
@@ -2543,7 +2582,7 @@ milliseconds) per peer</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="sstable-index-metrics"><a class="anchor" href="#sstable-index-metrics"></a><a class="link" href="#sstable-index-metrics">SSTable Index Metrics</a></h2>
+<h2 id="sstable-index-metrics"><a class="anchor" href="#sstable-index-metrics"></a>SSTable Index Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to the SSTable index metadata.</p>
@@ -2600,7 +2639,7 @@ per SSTable.</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="bufferpool-metrics"><a class="anchor" href="#bufferpool-metrics"></a><a class="link" href="#bufferpool-metrics">BufferPool Metrics</a></h2>
+<h2 id="bufferpool-metrics"><a class="anchor" href="#bufferpool-metrics"></a>BufferPool Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specific to the internal recycled buffer pool Cassandra manages.
@@ -2658,7 +2697,7 @@ incurred.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="client-metrics"><a class="anchor" href="#client-metrics"></a><a class="link" href="#client-metrics">Client Metrics</a></h2>
+<h2 id="client-metrics"><a class="anchor" href="#client-metrics"></a>Client Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specifc to client managment.</p>
@@ -2715,7 +2754,7 @@ connnective native clients by username</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="batch-metrics"><a class="anchor" href="#batch-metrics"></a><a class="link" href="#batch-metrics">Batch Metrics</a></h2>
+<h2 id="batch-metrics"><a class="anchor" href="#batch-metrics"></a>Batch Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Metrics specifc to batch statements.</p>
@@ -2772,7 +2811,7 @@ partitions processed per unlogged batch</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="jvm-metrics"><a class="anchor" href="#jvm-metrics"></a><a class="link" href="#jvm-metrics">JVM Metrics</a></h2>
+<h2 id="jvm-metrics"><a class="anchor" href="#jvm-metrics"></a>JVM Metrics</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>JVM metrics such as memory and garbage collection statistics can either
@@ -2780,7 +2819,7 @@ be accessed by connecting to the JVM using JMX or can be exported using
 <a href="#metric-reporters">Metric Reporters</a>.</p>
 </div>
 <div class="sect2">
-<h3 id="bufferpool"><a class="anchor" href="#bufferpool"></a><a class="link" href="#bufferpool">BufferPool</a></h3>
+<h3 id="bufferpool"><a class="anchor" href="#bufferpool"></a>BufferPool</h3>
 <div class="dlist">
 <dl>
 <dt class="hdlist1"><strong>Metric Name</strong></dt>
@@ -2828,7 +2867,7 @@ using for this buffer pool</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="filedescriptorratio"><a class="anchor" href="#filedescriptorratio"></a><a class="link" href="#filedescriptorratio">FileDescriptorRatio</a></h3>
+<h3 id="filedescriptorratio"><a class="anchor" href="#filedescriptorratio"></a>FileDescriptorRatio</h3>
 <div class="dlist">
 <dl>
 <dt class="hdlist1"><strong>Metric Name</strong></dt>
@@ -2864,7 +2903,7 @@ using for this buffer pool</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="garbagecollector"><a class="anchor" href="#garbagecollector"></a><a class="link" href="#garbagecollector">GarbageCollector</a></h3>
+<h3 id="garbagecollector"><a class="anchor" href="#garbagecollector"></a>GarbageCollector</h3>
 <div class="dlist">
 <dl>
 <dt class="hdlist1"><strong>Metric Name</strong></dt>
@@ -2906,7 +2945,7 @@ milliseconds</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="memory"><a class="anchor" href="#memory"></a><a class="link" href="#memory">Memory</a></h3>
+<h3 id="memory"><a class="anchor" href="#memory"></a>Memory</h3>
 <div class="dlist">
 <dl>
 <dt class="hdlist1"><strong>Metric Name</strong></dt>
@@ -2958,7 +2997,7 @@ for memory management</p></td>
 </table>
 </div>
 <div class="sect2">
-<h3 id="memorypool"><a class="anchor" href="#memorypool"></a><a class="link" href="#memorypool">MemoryPool</a></h3>
+<h3 id="memorypool"><a class="anchor" href="#memorypool"></a>MemoryPool</h3>
 <div class="dlist">
 <dl>
 <dt class="hdlist1"><strong>Metric Name</strong></dt>
@@ -3012,7 +3051,7 @@ for memory management</p></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="jmx"><a class="anchor" href="#jmx"></a><a class="link" href="#jmx">JMX</a></h2>
+<h2 id="jmx"><a class="anchor" href="#jmx"></a>JMX</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Any JMX based client can access metrics from cassandra.</p>
@@ -3042,7 +3081,7 @@ uncomment:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="metric-reporters"><a class="anchor" href="#metric-reporters"></a><a class="link" href="#metric-reporters">Metric Reporters</a></h2>
+<h2 id="metric-reporters"><a class="anchor" href="#metric-reporters"></a>Metric Reporters</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>As mentioned at the top of this section on monitoring the Cassandra
@@ -3072,11 +3111,11 @@ Cassandra&#8217;s classpath.</p>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -3104,16 +3143,20 @@ Cassandra&#8217;s classpath.</p>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/operating/metrics.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/operating/metrics.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -3131,6 +3174,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

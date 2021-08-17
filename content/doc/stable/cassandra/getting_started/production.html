@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item is-current-page is-active" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/getting_started/production.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,7 +763,7 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/getting_started/production.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/getting_started/production.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
@@ -740,7 +779,7 @@ This page expands on some of the information in the files.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="tokens"><a class="anchor" href="#tokens"></a><a class="link" href="#tokens">Tokens</a></h2>
+<h2 id="tokens"><a class="anchor" href="#tokens"></a>Tokens</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Using more than one token-range per node is referred to as virtual nodes, or vnodes.
@@ -808,7 +847,7 @@ appropriate number of replicates, to ensure even token allocation.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="read-ahead"><a class="anchor" href="#read-ahead"></a><a class="link" href="#read-ahead">Read ahead</a></h2>
+<h2 id="read-ahead"><a class="anchor" href="#read-ahead"></a>Read ahead</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Read ahead is an operating system feature that attempts to keep as much
@@ -901,7 +940,7 @@ section.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="compression"><a class="anchor" href="#compression"></a><a class="link" href="#compression">Compression</a></h2>
+<h2 id="compression"><a class="anchor" href="#compression"></a>Compression</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Compressed data is stored by compressing fixed size byte buffers and writing the
@@ -925,7 +964,7 @@ If you need additional information on compression, read
 </div>
 </div>
 <div class="sect1">
-<h2 id="compaction"><a class="anchor" href="#compaction"></a><a class="link" href="#compaction">Compaction</a></h2>
+<h2 id="compaction"><a class="anchor" href="#compaction"></a>Compaction</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>There are different <a href="#compaction/index.adoc" class="page unresolved">compaction</a> strategies available
@@ -938,7 +977,7 @@ the same cluster.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="encryption"><a class="anchor" href="#encryption"></a><a class="link" href="#encryption">Encryption</a></h2>
+<h2 id="encryption"><a class="anchor" href="#encryption"></a>Encryption</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>It is significantly better to set up peer-to-peer encryption and client server
@@ -953,7 +992,7 @@ result in downtime or data loss.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="ensure-keyspaces-are-created-with-networktopologystrategy"><a class="anchor" href="#ensure-keyspaces-are-created-with-networktopologystrategy"></a><a class="link" href="#ensure-keyspaces-are-created-with-networktopologystrategy">Ensure keyspaces are created with NetworkTopologyStrategy</a></h2>
+<h2 id="ensure-keyspaces-are-created-with-networktopologystrategy"><a class="anchor" href="#ensure-keyspaces-are-created-with-networktopologystrategy"></a>Ensure keyspaces are created with NetworkTopologyStrategy</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Production clusters should never use <code>SimpleStrategy</code>.
@@ -975,7 +1014,7 @@ of the ability to configure multiple racks and data centers.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="configure-racks-and-snitch"><a class="anchor" href="#configure-racks-and-snitch"></a><a class="link" href="#configure-racks-and-snitch">Configure racks and snitch</a></h2>
+<h2 id="configure-racks-and-snitch"><a class="anchor" href="#configure-racks-and-snitch"></a>Configure racks and snitch</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Correctly configuring or changing racks after a cluster has been provisioned is an unsupported process</strong>.
@@ -994,11 +1033,11 @@ premise or mixed cloud environments.
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -1026,16 +1065,20 @@ premise or mixed cloud environments.
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/getting_started/production.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/getting_started/production.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -1053,6 +1096,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>

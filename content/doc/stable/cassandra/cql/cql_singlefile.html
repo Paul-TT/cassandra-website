@@ -8,7 +8,7 @@
             <link rel="stylesheet" href="../../../../assets/css/site.css">
     <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
     <meta name="dcterms.subject" content="Cassandra">
-    <meta name="dcterms.identifier" content="3.11">
+    <meta name="dcterms.identifier" content="4.0">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="icon" href="../../../../assets/img/favicon.ico" type="image/x-icon">
 <script>
@@ -85,7 +85,7 @@
                 </a>
             </li>
             <li class="pa-micro hide-mobile">
-                <a href="https://cassandra.apache.org/_/community.html#discussion">
+                <a href="https://cassandra.apache.org/_/community.html#discussions">
                     <div class="sub-nav-icon">
                         <img src="../../../../assets/img/sub-menu-discussions.png" alt="discussions icon">
                     </div>
@@ -185,23 +185,23 @@
   <div class="nav-panel-explore" data-panel="explore">
 
     <div id="version-toggle" class="context">
-      <span class="version">3.11</span>
+      <span class="version">4.0</span>
     </div>
     <ul id="versions-list" class="components">
       <li class="component">
         <ul class="versions">
           <li class="version is-latest">
-            <a href="../../../../_/index.html">–</a>
+            <a href="../../../../_/index.html">master</a>
           </li>
         </ul>
       </li>
       <li class="component is-current">
         <ul class="versions">
-          <li class="version is-latest">
-            <a href="../../../4.0/index.html">4.0</a>
+          <li class="version is-current is-latest">
+            <a href="../../index.html">4.0</a>
           </li>
-          <li class="version is-current">
-            <a href="../../index.html">3.11</a>
+          <li class="version">
+            <a href="../../../3.11/index.html">3.11</a>
           </li>
         </ul>
       </li>
@@ -222,17 +222,17 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:glossary.adoc">Glossary</a>
+    <a class="nav-link" href="../../../../_/glossary.html">Glossary</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:bugs.adoc">How to report bugs</a>
+    <a class="nav-link" href="../../../../_/bugs.html">How to report bugs</a>
     </span>
   </li>
   <li class="nav-item" data-depth="2">
     <span class="nav-line">
-    <a class="nav-link" href="#master@Website:ROOT:contactus.adoc">Contact us</a>
+    <a class="nav-link" href="../../../../_/contactus.html">Contact us</a>
     </span>
   </li>
 </ul>
@@ -276,6 +276,49 @@
   <li class="nav-item" data-depth="3">
     <span class="nav-line">
     <a class="nav-link" href="../getting_started/production.html">Production recommendations</a>
+    </span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-line">
+    <button class="nav-toggle"></button>
+    <a class="nav-link" href="../new/index.html">What&#8217;s new</a>
+    </span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/java11.html">Support for Java 11</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/virtualtables.html">Virtual tables</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/auditlogging.html">Audit logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/fqllogging.html">Full query logging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/messaging.html">Improved internode Messaging</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/streaming.html">Improved streaming</a>
+    </span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-line">
+    <a class="nav-link" href="../new/transientreplication.html">Transient replication</a>
     </span>
   </li>
 </ul>
@@ -710,10 +753,6 @@
   <div class="toc-menu"></div>
 </aside>
         <main class="article default-main full-800" data-ceiling="topbar">
-  <div class="article-banner">
-    <p>A newer version of this documentation is available.</p>
-    <a class="btn" href="../../../4.0/cassandra/cql/cql_singlefile.html">View Latest</a>
-  </div>
   <div class="article-header">
 <nav class="crumbs" aria-label="breadcrumbs">
   <ul>
@@ -724,21 +763,21 @@
 </nav>
 <div class="tools" role="navigation">
   <ul>
-    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/cassandra-3.11/doc/modules/cassandra/pages/cql/cql_singlefile.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
+    <li class="tool edit"><a href="https://github.com/polandll/cassandra/edit/trunk/doc/modules/cassandra/pages/cql/cql_singlefile.adoc" title="Edit Page" target="_blank" rel="noopener">Edit</a></li>
   </ul>
 </div>
   </div>
 <article class="doc">
 <div class="sect1">
-<h2 id="cassandra-query-language-cql-v3-4-3"><a class="anchor" href="#cassandra-query-language-cql-v3-4-3"></a><a class="link" href="#cassandra-query-language-cql-v3-4-3">Cassandra Query Language (CQL) v3.4.3</a></h2>
+<h2 id="cassandra-query-language-cql-v3-4-3"><a class="anchor" href="#cassandra-query-language-cql-v3-4-3"></a>Cassandra Query Language (CQL) v3.4.3</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>\{toc:maxLevel=3}</p>
 </div>
 <div class="sect2">
-<h3 id="cql-syntax"><a class="anchor" href="#cql-syntax"></a><a class="link" href="#cql-syntax">CQL Syntax</a></h3>
+<h3 id="cql-syntax"><a class="anchor" href="#cql-syntax"></a>CQL Syntax</h3>
 <div class="sect3">
-<h4 id="preamble"><a class="anchor" href="#preamble"></a><a class="link" href="#preamble">Preamble</a></h4>
+<h4 id="preamble"><a class="anchor" href="#preamble"></a>Preamble</h4>
 <div class="paragraph">
 <p>This document describes the Cassandra Query Language (CQL) version 3.
 CQL v3 is not backward compatible with CQL v2 and differs from it in
@@ -756,7 +795,7 @@ implementation of Cassandra and in the thrift and CQL v2 API.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="conventions"><a class="anchor" href="#conventions"></a><a class="link" href="#conventions">Conventions</a></h4>
+<h4 id="conventions"><a class="anchor" href="#conventions"></a>Conventions</h4>
 <div class="paragraph">
 <p>To aid in specifying the CQL syntax, we will use the following
 conventions in this document:</p>
@@ -810,7 +849,7 @@ shown in a <code>fixed-width font</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="identifiers"><a class="anchor" href="#identifiers"></a><a class="link" href="#identifiers">Identifiers and keywords</a></h4>
+<h4 id="identifiers"><a class="anchor" href="#identifiers"></a>Identifiers and keywords</h4>
 <div class="paragraph">
 <p>The CQL language uses <em>identifiers</em> (or <em>names</em>) to identify tables,
 columns and other objects. An identifier is a token matching the regular
@@ -857,7 +896,7 @@ function call (like <code>"f(x)"</code>).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="constants"><a class="anchor" href="#constants"></a><a class="link" href="#constants">Constants</a></h4>
+<h4 id="constants"><a class="anchor" href="#constants"></a>Constants</h4>
 <div class="paragraph">
 <p>CQL defines the following kind of <em>constants</em>: strings, integers,
 floats, booleans, uuids and blobs:</p>
@@ -900,7 +939,7 @@ section</a>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="comments"><a class="anchor" href="#comments"></a><a class="link" href="#comments">Comments</a></h4>
+<h4 id="comments"><a class="anchor" href="#comments"></a>Comments</h4>
 <div class="paragraph">
 <p>A comment in CQL is a line beginning by either double dashes (<code>--</code>) or
 double slash (<code>//</code>).</p>
@@ -917,7 +956,7 @@ a multi-line comment */</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="statements"><a class="anchor" href="#statements"></a><a class="link" href="#statements">Statements</a></h4>
+<h4 id="statements"><a class="anchor" href="#statements"></a>Statements</h4>
 <div class="paragraph">
 <p>CQL consists of statements. As in SQL, these statements can be divided
 in 3 categories:</p>
@@ -1033,7 +1072,7 @@ p.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="preparedStatement"><a class="anchor" href="#preparedStatement"></a><a class="link" href="#preparedStatement">Prepared Statement</a></h4>
+<h4 id="preparedStatement"><a class="anchor" href="#preparedStatement"></a>Prepared Statement</h4>
 <div class="paragraph">
 <p>CQL supports <em>prepared statements</em>. Prepared statement is an
 optimization that allows to parse a query only once but execute it
@@ -1057,9 +1096,9 @@ bind markers are used, the names for the query parameters will be
 </div>
 </div>
 <div class="sect2">
-<h3 id="dataDefinition"><a class="anchor" href="#dataDefinition"></a><a class="link" href="#dataDefinition">Data Definition</a></h3>
+<h3 id="dataDefinition"><a class="anchor" href="#dataDefinition"></a>Data Definition</h3>
 <div class="sect3">
-<h4 id="createKeyspaceStmt"><a class="anchor" href="#createKeyspaceStmt"></a><a class="link" href="#createKeyspaceStmt">CREATE KEYSPACE</a></h4>
+<h4 id="createKeyspaceStmt"><a class="anchor" href="#createKeyspaceStmt"></a>CREATE KEYSPACE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1157,7 +1196,7 @@ will be a no-op if the keyspace already exists.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="useStmt"><a class="anchor" href="#useStmt"></a><a class="link" href="#useStmt">USE</a></h4>
+<h4 id="useStmt"><a class="anchor" href="#useStmt"></a>USE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1179,7 +1218,7 @@ another USE statement is issued or the connection terminates.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="alterKeyspaceStmt"><a class="anchor" href="#alterKeyspaceStmt"></a><a class="link" href="#alterKeyspaceStmt">ALTER KEYSPACE</a></h4>
+<h4 id="alterKeyspaceStmt"><a class="anchor" href="#alterKeyspaceStmt"></a>ALTER KEYSPACE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1202,7 +1241,7 @@ keyspace. The supported <code>&lt;properties&gt;</code> are the same as for the
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropKeyspaceStmt"><a class="anchor" href="#dropKeyspaceStmt"></a><a class="link" href="#dropKeyspaceStmt">DROP KEYSPACE</a></h4>
+<h4 id="dropKeyspaceStmt"><a class="anchor" href="#dropKeyspaceStmt"></a>DROP KEYSPACE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1226,7 +1265,7 @@ unless <code>IF EXISTS</code> is used in which case the operation is a no-op.</p
 </div>
 </div>
 <div class="sect3">
-<h4 id="createTableStmt"><a class="anchor" href="#createTableStmt"></a><a class="link" href="#createTableStmt">CREATE TABLE</a></h4>
+<h4 id="createTableStmt"><a class="anchor" href="#createTableStmt"></a>CREATE TABLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1284,7 +1323,7 @@ unless the <code>IF NOT EXISTS</code> option is used. If it is used, the stateme
 will be a no-op if the table already exists.</p>
 </div>
 <div class="sect4">
-<h5 id="createTableName"><a class="anchor" href="#createTableName"></a><a class="link" href="#createTableName"><code>&lt;tablename&gt;</code></a></h5>
+<h5 id="createTableName"><a class="anchor" href="#createTableName"></a><code>&lt;tablename&gt;</code></h5>
 <div class="paragraph">
 <p>Valid table names are the same as valid
 <a href="#createKeyspaceStmt">keyspace names</a> (up to 32 characters long
@@ -1296,7 +1335,7 @@ keyspace (but does <strong>not</strong> change the current keyspace).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="createTableColumn"><a class="anchor" href="#createTableColumn"></a><a class="link" href="#createTableColumn"><code>&lt;column-definition&gt;</code></a></h5>
+<h5 id="createTableColumn"><a class="anchor" href="#createTableColumn"></a><code>&lt;column-definition&gt;</code></h5>
 <div class="paragraph">
 <p>A <code>CREATE TABLE</code> statement defines the columns that rows of the table
 can have. A <em>column</em> is defined by its name (an identifier) and its type
@@ -1333,7 +1372,7 @@ PRIMARY KEY (k)<br>
 </div>
 </div>
 <div class="sect4">
-<h5 id="createTablepartitionClustering"><a class="anchor" href="#createTablepartitionClustering"></a><a class="link" href="#createTablepartitionClustering">Partition key and clustering columns</a></h5>
+<h5 id="createTablepartitionClustering"><a class="anchor" href="#createTablepartitionClustering"></a>Partition key and clustering columns</h5>
 <div class="paragraph">
 <p>In CQL, the order in which columns are defined for the <code>PRIMARY KEY</code>
 matters. The first column of the key is called the <em>partition key</em>. It
@@ -1354,7 +1393,7 @@ efficient (see <code>SELECT</code>).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="createTableStatic"><a class="anchor" href="#createTableStatic"></a><a class="link" href="#createTableStatic"><code>STATIC</code> columns</a></h5>
+<h5 id="createTableStatic"><a class="anchor" href="#createTableStatic"></a><code>STATIC</code> columns</h5>
 <div class="paragraph">
 <p>Some columns can be declared as <code>STATIC</code> in a table definition. A column
 that is static will be ``shared'' by all the rows belonging to the same
@@ -1401,7 +1440,7 @@ so every column is inherently static).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="createTableOptions"><a class="anchor" href="#createTableOptions"></a><a class="link" href="#createTableOptions"><code>&lt;option&gt;</code></a></h5>
+<h5 id="createTableOptions"><a class="anchor" href="#createTableOptions"></a><code>&lt;option&gt;</code></h5>
 <div class="paragraph">
 <p>The <code>CREATE TABLE</code> statement supports a number of options that controls
 the configuration of a new table. These options can be specified after
@@ -1502,7 +1541,7 @@ impact the size of bloom filters in-memory and on-disk)</p></td>
 </table>
 </div>
 <div class="sect4">
-<h5 id="compactionOptions"><a class="anchor" href="#compactionOptions"></a><a class="link" href="#compactionOptions">Compaction options</a></h5>
+<h5 id="compactionOptions"><a class="anchor" href="#compactionOptions"></a>Compaction options</h5>
 <div class="paragraph">
 <p>The <code>compaction</code> property must at least define the <code>'class'</code> sub-option,
 that defines the compaction strategy class to use. The default supported
@@ -1680,7 +1719,7 @@ to the risk the jvm must also be started with
 </table>
 </div>
 <div class="sect4">
-<h5 id="compressionOptions"><a class="anchor" href="#compressionOptions"></a><a class="link" href="#compressionOptions">Compression options</a></h5>
+<h5 id="compressionOptions"><a class="anchor" href="#compressionOptions"></a>Compression options</h5>
 <div class="paragraph">
 <p>For the <code>compression</code> property, the following sub-options are available:</p>
 </div>
@@ -1746,7 +1785,7 @@ other read</p></td>
 </table>
 </div>
 <div class="sect4">
-<h5 id="cachingOptions"><a class="anchor" href="#cachingOptions"></a><a class="link" href="#cachingOptions">Caching options</a></h5>
+<h5 id="cachingOptions"><a class="anchor" href="#cachingOptions"></a>Caching options</h5>
 <div class="paragraph">
 <p>For the <code>caching</code> property, the following sub-options are available:</p>
 </div>
@@ -1782,7 +1821,7 @@ cache all rows of a queried partition, or <code>NONE</code> to disable row cachi
 </table>
 </div>
 <div class="sect4">
-<h5 id="other-considerations"><a class="anchor" href="#other-considerations"></a><a class="link" href="#other-considerations">Other considerations:</a></h5>
+<h5 id="other-considerations"><a class="anchor" href="#other-considerations"></a>Other considerations:</h5>
 <div class="ulist">
 <ul>
 <li>
@@ -1798,7 +1837,7 @@ haven’t) when creating a table.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="alterTableStmt"><a class="anchor" href="#alterTableStmt"></a><a class="link" href="#alterTableStmt">ALTER TABLE</a></h4>
+<h4 id="alterTableStmt"><a class="anchor" href="#alterTableStmt"></a>ALTER TABLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1864,7 +1903,7 @@ the set of <code>compression</code> sub-options.</p>
 </ul>
 </div>
 <div class="sect4">
-<h5 id="cql-type-compatibility"><a class="anchor" href="#cql-type-compatibility"></a><a class="link" href="#cql-type-compatibility">CQL type compatibility:</a></h5>
+<h5 id="cql-type-compatibility"><a class="anchor" href="#cql-type-compatibility"></a>CQL type compatibility:</h5>
 <div class="paragraph">
 <p>CQL data types may be converted only as the following table.</p>
 </div>
@@ -1953,7 +1992,7 @@ conversions are allowed.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropTableStmt"><a class="anchor" href="#dropTableStmt"></a><a class="link" href="#dropTableStmt">DROP TABLE</a></h4>
+<h4 id="dropTableStmt"><a class="anchor" href="#dropTableStmt"></a>DROP TABLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1977,7 +2016,7 @@ creation, <code>DROP COLUMNFAMILY</code> is allowed as an alias for <code>DROP T
 </div>
 </div>
 <div class="sect3">
-<h4 id="truncateStmt"><a class="anchor" href="#truncateStmt"></a><a class="link" href="#truncateStmt">TRUNCATE</a></h4>
+<h4 id="truncateStmt"><a class="anchor" href="#truncateStmt"></a>TRUNCATE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -1995,7 +2034,7 @@ creation, <code>DROP COLUMNFAMILY</code> is allowed as an alias for <code>DROP T
 </div>
 </div>
 <div class="sect3">
-<h4 id="createIndexStmt"><a class="anchor" href="#createIndexStmt"></a><a class="link" href="#createIndexStmt">CREATE INDEX</a></h4>
+<h4 id="createIndexStmt"><a class="anchor" href="#createIndexStmt"></a>CREATE INDEX</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2034,7 +2073,7 @@ unless the <code>IF NOT EXISTS</code> option is used. If it is used, the stateme
 will be a no-op if the index already exists.</p>
 </div>
 <div class="sect4">
-<h5 id="keysIndex"><a class="anchor" href="#keysIndex"></a><a class="link" href="#keysIndex">Indexes on Map Keys</a></h5>
+<h5 id="keysIndex"><a class="anchor" href="#keysIndex"></a>Indexes on Map Keys</h5>
 <div class="paragraph">
 <p>When creating an index on a <a href="#map">map column</a>, you may index either
 the keys or the values. If the column identifier is placed within the
@@ -2045,7 +2084,7 @@ the map values.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropIndexStmt"><a class="anchor" href="#dropIndexStmt"></a><a class="link" href="#dropIndexStmt">DROP INDEX</a></h4>
+<h4 id="dropIndexStmt"><a class="anchor" href="#dropIndexStmt"></a>DROP INDEX</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2072,7 +2111,7 @@ specify the keyspace of the index.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="createMVStmt"><a class="anchor" href="#createMVStmt"></a><a class="link" href="#createMVStmt">CREATE MATERIALIZED VIEW</a></h4>
+<h4 id="createMVStmt"><a class="anchor" href="#createMVStmt"></a>CREATE MATERIALIZED VIEW</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2108,7 +2147,7 @@ an error unless the <code>IF NOT EXISTS</code> option is used. If it is used, th
 statement will be a no-op if the materialized view already exists.</p>
 </div>
 <div class="sect4">
-<h5 id="createMVWhere"><a class="anchor" href="#createMVWhere"></a><a class="link" href="#createMVWhere"><code>WHERE</code> Clause</a></h5>
+<h5 id="createMVWhere"><a class="anchor" href="#createMVWhere"></a><code>WHERE</code> Clause</h5>
 <div class="paragraph">
 <p>The <code>&lt;where-clause&gt;</code> is similar to the <a href="#selectWhere">where clause of
 a <code>SELECT</code> statement</a>, with a few differences. First, the where clause
@@ -2122,7 +2161,7 @@ may be lifted in the future.)</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="alterMVStmt"><a class="anchor" href="#alterMVStmt"></a><a class="link" href="#alterMVStmt">ALTER MATERIALIZED VIEW</a></h4>
+<h4 id="alterMVStmt"><a class="anchor" href="#alterMVStmt"></a>ALTER MATERIALIZED VIEW</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2136,7 +2175,7 @@ these options are the same as <code>CREATE TABLE</code>’s options.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropMVStmt"><a class="anchor" href="#dropMVStmt"></a><a class="link" href="#dropMVStmt">DROP MATERIALIZED VIEW</a></h4>
+<h4 id="dropMVStmt"><a class="anchor" href="#dropMVStmt"></a>DROP MATERIALIZED VIEW</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2160,7 +2199,7 @@ no-op.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="createTypeStmt"><a class="anchor" href="#createTypeStmt"></a><a class="link" href="#createTypeStmt">CREATE TYPE</a></h4>
+<h4 id="createTypeStmt"><a class="anchor" href="#createTypeStmt"></a>CREATE TYPE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2204,7 +2243,7 @@ unless the <code>IF NOT EXISTS</code> option is used. If it is used, the stateme
 will be a no-op if the type already exists.</p>
 </div>
 <div class="sect4">
-<h5 id="createTypeName"><a class="anchor" href="#createTypeName"></a><a class="link" href="#createTypeName"><code>&lt;typename&gt;</code></a></h5>
+<h5 id="createTypeName"><a class="anchor" href="#createTypeName"></a><code>&lt;typename&gt;</code></h5>
 <div class="paragraph">
 <p>Valid type names are identifiers. The names of existing CQL types and
 <a href="#appendixB">reserved type names</a> may not be used.</p>
@@ -2218,7 +2257,7 @@ keyspace.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="alterTypeStmt"><a class="anchor" href="#alterTypeStmt"></a><a class="link" href="#alterTypeStmt">ALTER TYPE</a></h4>
+<h4 id="alterTypeStmt"><a class="anchor" href="#alterTypeStmt"></a>ALTER TYPE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2245,7 +2284,7 @@ type of existing fields.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropTypeStmt"><a class="anchor" href="#dropTypeStmt"></a><a class="link" href="#dropTypeStmt">DROP TYPE</a></h4>
+<h4 id="dropTypeStmt"><a class="anchor" href="#dropTypeStmt"></a>DROP TYPE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2263,7 +2302,7 @@ is used, in which case the operation is a no-op.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="createTriggerStmt"><a class="anchor" href="#createTriggerStmt"></a><a class="link" href="#createTriggerStmt">CREATE TRIGGER</a></h4>
+<h4 id="createTriggerStmt"><a class="anchor" href="#createTriggerStmt"></a>CREATE TRIGGER</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2292,7 +2331,7 @@ the transaction.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropTriggerStmt"><a class="anchor" href="#dropTriggerStmt"></a><a class="link" href="#dropTriggerStmt">DROP TRIGGER</a></h4>
+<h4 id="dropTriggerStmt"><a class="anchor" href="#dropTriggerStmt"></a>DROP TRIGGER</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2313,7 +2352,7 @@ using <code>CREATE TRIGGER</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="createFunctionStmt"><a class="anchor" href="#createFunctionStmt"></a><a class="link" href="#createFunctionStmt">CREATE FUNCTION</a></h4>
+<h4 id="createFunctionStmt"><a class="anchor" href="#createFunctionStmt"></a>CREATE FUNCTION</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2352,7 +2391,7 @@ AS  +
 <p><code>CREATE FUNCTION</code> creates or replaces a user-defined function.</p>
 </div>
 <div class="sect4">
-<h5 id="functionSignature"><a class="anchor" href="#functionSignature"></a><a class="link" href="#functionSignature">Function Signature</a></h5>
+<h5 id="functionSignature"><a class="anchor" href="#functionSignature"></a>Function Signature</h5>
 <div class="paragraph">
 <p>Signatures are used to distinguish individual functions. The signature
 consists of:</p>
@@ -2415,7 +2454,7 @@ information.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropFunctionStmt"><a class="anchor" href="#dropFunctionStmt"></a><a class="link" href="#dropFunctionStmt">DROP FUNCTION</a></h4>
+<h4 id="dropFunctionStmt"><a class="anchor" href="#dropFunctionStmt"></a>DROP FUNCTION</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2448,7 +2487,7 @@ if it exists.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="createAggregateStmt"><a class="anchor" href="#createAggregateStmt"></a><a class="link" href="#createAggregateStmt">CREATE AGGREGATE</a></h4>
+<h4 id="createAggregateStmt"><a class="anchor" href="#createAggregateStmt"></a>CREATE AGGREGATE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2538,7 +2577,7 @@ information.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropAggregateStmt"><a class="anchor" href="#dropAggregateStmt"></a><a class="link" href="#dropAggregateStmt">DROP AGGREGATE</a></h4>
+<h4 id="dropAggregateStmt"><a class="anchor" href="#dropAggregateStmt"></a>DROP AGGREGATE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2577,9 +2616,9 @@ signature does not exist.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="dataManipulation"><a class="anchor" href="#dataManipulation"></a><a class="link" href="#dataManipulation">Data Manipulation</a></h3>
+<h3 id="dataManipulation"><a class="anchor" href="#dataManipulation"></a>Data Manipulation</h3>
 <div class="sect3">
-<h4 id="insertStmt"><a class="anchor" href="#insertStmt"></a><a class="link" href="#insertStmt">INSERT</a></h4>
+<h4 id="insertStmt"><a class="anchor" href="#insertStmt"></a>INSERT</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2644,7 +2683,7 @@ counters, while <code>UPDATE</code> does.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="updateStmt"><a class="anchor" href="#updateStmt"></a><a class="link" href="#updateStmt">UPDATE</a></h4>
+<h4 id="updateStmt"><a class="anchor" href="#updateStmt"></a>UPDATE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2743,7 +2782,7 @@ counters, not the assignment of a specific value).</p>
 of a single field on a non-frozen user-defined types.</p>
 </div>
 <div class="sect4">
-<h5 id="updateOptions"><a class="anchor" href="#updateOptions"></a><a class="link" href="#updateOptions"><code>&lt;options&gt;</code></a></h5>
+<h5 id="updateOptions"><a class="anchor" href="#updateOptions"></a><code>&lt;options&gt;</code></h5>
 <div class="paragraph">
 <p>The <code>UPDATE</code> and <code>INSERT</code> statements support the following options:</p>
 </div>
@@ -2770,7 +2809,7 @@ TTL of 0 will remove the TTL for the inserted or updated values.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="deleteStmt"><a class="anchor" href="#deleteStmt"></a><a class="link" href="#deleteStmt">DELETE</a></h4>
+<h4 id="deleteStmt"><a class="anchor" href="#deleteStmt"></a>DELETE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2851,7 +2890,7 @@ sparingly.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="batchStmt"><a class="anchor" href="#batchStmt"></a><a class="link" href="#batchStmt">BATCH</a></h4>
+<h4 id="batchStmt"><a class="anchor" href="#batchStmt"></a>BATCH</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -2929,7 +2968,7 @@ operation ordering, you must specify per-operation timestamps.</p>
 </ul>
 </div>
 <div class="sect4">
-<h5 id="unloggedBatch"><a class="anchor" href="#unloggedBatch"></a><a class="link" href="#unloggedBatch"><code>UNLOGGED</code></a></h5>
+<h5 id="unloggedBatch"><a class="anchor" href="#unloggedBatch"></a><code>UNLOGGED</code></h5>
 <div class="paragraph">
 <p>By default, Cassandra uses a batch log to ensure all operations in a
 batch eventually complete or none will (note however that operations are
@@ -2944,14 +2983,14 @@ partly applied.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="counterBatch"><a class="anchor" href="#counterBatch"></a><a class="link" href="#counterBatch"><code>COUNTER</code></a></h5>
+<h5 id="counterBatch"><a class="anchor" href="#counterBatch"></a><code>COUNTER</code></h5>
 <div class="paragraph">
 <p>Use the <code>COUNTER</code> option for batched counter updates. Unlike other
 updates in Cassandra, counter updates are not idempotent.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="batchOptions"><a class="anchor" href="#batchOptions"></a><a class="link" href="#batchOptions"><code>&lt;option&gt;</code></a></h5>
+<h5 id="batchOptions"><a class="anchor" href="#batchOptions"></a><code>&lt;option&gt;</code></h5>
 <div class="paragraph">
 <p><code>BATCH</code> supports both the <code>TIMESTAMP</code> option, with similar semantic to
 the one described in the <a href="#updateOptions"><code>UPDATE</code></a> statement (the
@@ -2962,9 +3001,9 @@ used, <code>TIMESTAMP</code> <strong>must not</strong> be used in the statements
 </div>
 </div>
 <div class="sect2">
-<h3 id="queries"><a class="anchor" href="#queries"></a><a class="link" href="#queries">Queries</a></h3>
+<h3 id="queries"><a class="anchor" href="#queries"></a>Queries</h3>
 <div class="sect3">
-<h4 id="selectStmt"><a class="anchor" href="#selectStmt"></a><a class="link" href="#selectStmt">SELECT</a></h4>
+<h4 id="selectStmt"><a class="anchor" href="#selectStmt"></a>SELECT</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3049,7 +3088,7 @@ named <code>`json''. See the section on <a href="#selectJson">`SELECT JSON</code
 more details.</p>
 </div>
 <div class="sect4">
-<h5 id="selectSelection"><a class="anchor" href="#selectSelection"></a><a class="link" href="#selectSelection"><code>&lt;select-clause&gt;</code></a></h5>
+<h5 id="selectSelection"><a class="anchor" href="#selectSelection"></a><code>&lt;select-clause&gt;</code></h5>
 <div class="paragraph">
 <p>The <code>&lt;select-clause&gt;</code> determines which columns needs to be queried and
 returned in the result-set. It consists of either the comma-separated
@@ -3088,7 +3127,7 @@ query. Note that <code>COUNT(1)</code> is supported as an alias.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="selectWhere"><a class="anchor" href="#selectWhere"></a><a class="link" href="#selectWhere"><code>&lt;where-clause&gt;</code></a></h5>
+<h5 id="selectWhere"><a class="anchor" href="#selectWhere"></a><code>&lt;where-clause&gt;</code></h5>
 <div class="paragraph">
 <p>The <code>&lt;where-clause&gt;</code> specifies which rows must be queried. It is
 composed of relations on the columns that are part of the <code>PRIMARY KEY</code>
@@ -3190,7 +3229,7 @@ applies to the map keys.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="selectOrderBy"><a class="anchor" href="#selectOrderBy"></a><a class="link" href="#selectOrderBy"><code>&lt;order-by&gt;</code></a></h5>
+<h5 id="selectOrderBy"><a class="anchor" href="#selectOrderBy"></a><code>&lt;order-by&gt;</code></h5>
 <div class="paragraph">
 <p>The <code>ORDER BY</code> option allows to select the order of the returned
 results. It takes as argument a list of column names along with the
@@ -3214,7 +3253,7 @@ columns and the reverse of that one.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="selectGroupBy"><a class="anchor" href="#selectGroupBy"></a><a class="link" href="#selectGroupBy"><code>&lt;group-by&gt;</code></a></h5>
+<h5 id="selectGroupBy"><a class="anchor" href="#selectGroupBy"></a><code>&lt;group-by&gt;</code></h5>
 <div class="paragraph">
 <p>The <code>GROUP BY</code> option allows to condense into a single row all selected
 rows that share the same values for a set of columns.</p>
@@ -3239,7 +3278,7 @@ returned.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="selectLimit"><a class="anchor" href="#selectLimit"></a><a class="link" href="#selectLimit"><code>LIMIT</code> and <code>PER PARTITION LIMIT</code></a></h5>
+<h5 id="selectLimit"><a class="anchor" href="#selectLimit"></a><code>LIMIT</code> and <code>PER PARTITION LIMIT</code></h5>
 <div class="paragraph">
 <p>The <code>LIMIT</code> option to a <code>SELECT</code> statement limits the number of rows
 returned by a query, while the <code>PER PARTITION LIMIT</code> option limits the
@@ -3248,7 +3287,7 @@ both type of limit can used in the same statement.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="selectAllowFiltering"><a class="anchor" href="#selectAllowFiltering"></a><a class="link" href="#selectAllowFiltering"><code>ALLOW FILTERING</code></a></h5>
+<h5 id="selectAllowFiltering"><a class="anchor" href="#selectAllowFiltering"></a><code>ALLOW FILTERING</code></h5>
 <div class="paragraph">
 <p>By default, CQL only allows select queries that don’t involve
 <code>filtering'' server side, i.e. queries where we know that all (live)
@@ -3330,9 +3369,9 @@ country = `FR' ALLOW FILTERING;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="databaseRoles"><a class="anchor" href="#databaseRoles"></a><a class="link" href="#databaseRoles">Database Roles</a></h3>
+<h3 id="databaseRoles"><a class="anchor" href="#databaseRoles"></a>Database Roles</h3>
 <div class="sect3">
-<h4 id="createRoleStmt"><a class="anchor" href="#createRoleStmt"></a><a class="link" href="#createRoleStmt">CREATE ROLE</a></h4>
+<h4 id="createRoleStmt"><a class="anchor" href="#createRoleStmt"></a>CREATE ROLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3386,7 +3425,7 @@ implementations may support only a subset of the listed options.</p>
 <p>Role names should be quoted if they contain non-alphanumeric characters.</p>
 </div>
 <div class="sect4">
-<h5 id="createRolePwd"><a class="anchor" href="#createRolePwd"></a><a class="link" href="#createRolePwd">Setting credentials for internal authentication</a></h5>
+<h5 id="createRolePwd"><a class="anchor" href="#createRolePwd"></a>Setting credentials for internal authentication</h5>
 <div class="paragraph">
 <p>Use the <code>WITH PASSWORD</code> clause to set a password for internal
 authentication, enclosing the password in single quotation marks.<br>
@@ -3395,7 +3434,7 @@ If internal authentication has not been set up or the role does not have
 </div>
 </div>
 <div class="sect4">
-<h5 id="createRoleConditional"><a class="anchor" href="#createRoleConditional"></a><a class="link" href="#createRoleConditional">Creating a role conditionally</a></h5>
+<h5 id="createRoleConditional"><a class="anchor" href="#createRoleConditional"></a>Creating a role conditionally</h5>
 <div class="paragraph">
 <p>Attempting to create an existing role results in an invalid query
 condition unless the <code>IF NOT EXISTS</code> option is used. If the option is
@@ -3409,7 +3448,7 @@ CREATE ROLE IF NOT EXISTS other_role;</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="alterRoleStmt"><a class="anchor" href="#alterRoleStmt"></a><a class="link" href="#alterRoleStmt">ALTER ROLE</a></h4>
+<h4 id="alterRoleStmt"><a class="anchor" href="#alterRoleStmt"></a>ALTER ROLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3456,7 +3495,7 @@ identified at login (e.g. <code>PASSWORD</code>)</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropRoleStmt"><a class="anchor" href="#dropRoleStmt"></a><a class="link" href="#dropRoleStmt">DROP ROLE</a></h4>
+<h4 id="dropRoleStmt"><a class="anchor" href="#dropRoleStmt"></a>DROP ROLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3485,7 +3524,7 @@ used and the role does not exist the statement is a no-op.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="grantRoleStmt"><a class="anchor" href="#grantRoleStmt"></a><a class="link" href="#grantRoleStmt">GRANT ROLE</a></h4>
+<h4 id="grantRoleStmt"><a class="anchor" href="#grantRoleStmt"></a>GRANT ROLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3519,7 +3558,7 @@ GRANT role_c TO role_a;</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="revokeRoleStmt"><a class="anchor" href="#revokeRoleStmt"></a><a class="link" href="#revokeRoleStmt">REVOKE ROLE</a></h4>
+<h4 id="revokeRoleStmt"><a class="anchor" href="#revokeRoleStmt"></a>REVOKE ROLE</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3540,7 +3579,7 @@ permissions that <code>alice</code> has acquired via the <code>report_writer</co
 also revoked.</p>
 </div>
 <div class="sect4">
-<h5 id="listRolesStmt"><a class="anchor" href="#listRolesStmt"></a><a class="link" href="#listRolesStmt">LIST ROLES</a></h5>
+<h5 id="listRolesStmt"><a class="anchor" href="#listRolesStmt"></a>LIST ROLES</h5>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3577,7 +3616,7 @@ LIST ROLES OF <code>bob</code> NORECURSIVE</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="createUserStmt"><a class="anchor" href="#createUserStmt"></a><a class="link" href="#createUserStmt">CREATE USER</a></h4>
+<h4 id="createUserStmt"><a class="anchor" href="#createUserStmt"></a>CREATE USER</h4>
 <div class="paragraph">
 <p>Prior to the introduction of roles in Cassandra 2.2, authentication and
 authorization were based around the concept of a <code>USER</code>. For backward
@@ -3635,7 +3674,7 @@ p.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="alterUserStmt"><a class="anchor" href="#alterUserStmt"></a><a class="link" href="#alterUserStmt">ALTER USER</a></h4>
+<h4 id="alterUserStmt"><a class="anchor" href="#alterUserStmt"></a>ALTER USER</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3655,7 +3694,7 @@ ALTER USER bob SUPERUSER;</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="dropUserStmt"><a class="anchor" href="#dropUserStmt"></a><a class="link" href="#dropUserStmt">DROP USER</a></h4>
+<h4 id="dropUserStmt"><a class="anchor" href="#dropUserStmt"></a>DROP USER</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3674,7 +3713,7 @@ DROP USER IF EXISTS bob;</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="listUsersStmt"><a class="anchor" href="#listUsersStmt"></a><a class="link" href="#listUsersStmt">LIST USERS</a></h4>
+<h4 id="listUsersStmt"><a class="anchor" href="#listUsersStmt"></a>LIST USERS</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -3702,9 +3741,9 @@ LIST ROLES;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="dataControl"><a class="anchor" href="#dataControl"></a><a class="link" href="#dataControl">Data Control</a></h3>
+<h3 id="dataControl"><a class="anchor" href="#dataControl"></a>Data Control</h3>
 <div class="sect3">
-<h4 id="permissions"><a class="anchor" href="#permissions"></a><a class="link" href="#permissions">Permissions</a></h4>
+<h4 id="permissions"><a class="anchor" href="#permissions"></a>Permissions</h4>
 <div class="paragraph">
 <p>Permissions on resources are granted to roles; there are several
 different types of resources in Cassandra and each type is modelled
@@ -4277,7 +4316,7 @@ wildcard pattern</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="grantPermissionsStmt"><a class="anchor" href="#grantPermissionsStmt"></a><a class="link" href="#grantPermissionsStmt">GRANT PERMISSION</a></h4>
+<h4 id="grantPermissionsStmt"><a class="anchor" href="#grantPermissionsStmt"></a>GRANT PERMISSION</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -4348,14 +4387,14 @@ GRANT DESCRIBE ON ALL ROLES TO role_admin;</p>
 and all roles in the system with a <code>LIST ROLES</code> statement</p>
 </div>
 <div class="sect4">
-<h5 id="grantAll"><a class="anchor" href="#grantAll"></a><a class="link" href="#grantAll">GRANT ALL</a></h5>
+<h5 id="grantAll"><a class="anchor" href="#grantAll"></a>GRANT ALL</h5>
 <div class="paragraph">
 <p>When the <code>GRANT ALL</code> form is used, the appropriate set of permissions is
 determined automatically based on the target resource.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="autoGrantPermissions"><a class="anchor" href="#autoGrantPermissions"></a><a class="link" href="#autoGrantPermissions">Automatic Granting</a></h5>
+<h5 id="autoGrantPermissions"><a class="anchor" href="#autoGrantPermissions"></a>Automatic Granting</h5>
 <div class="paragraph">
 <p>When a resource is created, via a <code>CREATE KEYSPACE</code>, <code>CREATE TABLE</code>,
 <code>CREATE FUNCTION</code>, <code>CREATE AGGREGATE</code> or <code>CREATE ROLE</code> statement, the
@@ -4366,7 +4405,7 @@ the new resource.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="revokePermissionsStmt"><a class="anchor" href="#revokePermissionsStmt"></a><a class="link" href="#revokePermissionsStmt">REVOKE PERMISSION</a></h4>
+<h4 id="revokePermissionsStmt"><a class="anchor" href="#revokePermissionsStmt"></a>REVOKE PERMISSION</h4>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -4404,7 +4443,7 @@ REVOKE DESCRIBE ON ALL ROLES FROM role_admin;<br>
 p.</p>
 </div>
 <div class="sect4">
-<h5 id="listPermissionsStmt"><a class="anchor" href="#listPermissionsStmt"></a><a class="link" href="#listPermissionsStmt">LIST PERMISSIONS</a></h5>
+<h5 id="listPermissionsStmt"><a class="anchor" href="#listPermissionsStmt"></a>LIST PERMISSIONS</h5>
 <div class="paragraph">
 <p><em>Syntax:</em></p>
 </div>
@@ -4462,7 +4501,7 @@ limited to <code>SELECT</code> permissions on any resource.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="types"><a class="anchor" href="#types"></a><a class="link" href="#types">Data Types</a></h3>
+<h3 id="types"><a class="anchor" href="#types"></a>Data Types</h3>
 <div class="paragraph">
 <p>CQL supports a rich set of data types for columns defined in a table,
 including collection types. On top of those native<br>
@@ -4642,7 +4681,7 @@ Timeuuid</a></p></td>
 <a href="#collections">Working with collections</a> section below.</p>
 </div>
 <div class="sect3">
-<h4 id="usingtimestamps"><a class="anchor" href="#usingtimestamps"></a><a class="link" href="#usingtimestamps">Working with timestamps</a></h4>
+<h4 id="usingtimestamps"><a class="anchor" href="#usingtimestamps"></a>Working with timestamps</h4>
 <div class="paragraph">
 <p>Values of the <code>timestamp</code> type are encoded as 64-bit signed integers
 representing a number of milliseconds since the standard base time known
@@ -4732,7 +4771,7 @@ or default time zone.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="usingdates"><a class="anchor" href="#usingdates"></a><a class="link" href="#usingdates">Working with dates</a></h4>
+<h4 id="usingdates"><a class="anchor" href="#usingdates"></a>Working with dates</h4>
 <div class="paragraph">
 <p>Values of the <code>date</code> type are encoded as 32-bit unsigned integers
 representing a number of days with ``the epoch'' at the center of the
@@ -4753,7 +4792,7 @@ range (2^31). Epoch is January 1st, 1970</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="usingtime"><a class="anchor" href="#usingtime"></a><a class="link" href="#usingtime">Working with time</a></h4>
+<h4 id="usingtime"><a class="anchor" href="#usingtime"></a>Working with time</h4>
 <div class="paragraph">
 <p>Values of the <code>time</code> type are encoded as 64-bit signed integers
 representing the number of nanoseconds since midnight.</p>
@@ -4784,7 +4823,7 @@ formats:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="counters"><a class="anchor" href="#counters"></a><a class="link" href="#counters">Counters</a></h4>
+<h4 id="counters"><a class="anchor" href="#counters"></a>Counters</h4>
 <div class="paragraph">
 <p>The <code>counter</code> type is used to define <em>counter columns</em>. A counter column
 is a column whose value is a 64-bit signed integer and on which 2
@@ -4815,9 +4854,9 @@ the counter type, or none of them have it.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="collections"><a class="anchor" href="#collections"></a><a class="link" href="#collections">Working with collections</a></h4>
+<h4 id="collections"><a class="anchor" href="#collections"></a>Working with collections</h4>
 <div class="sect4">
-<h5 id="noteworthy-characteristics"><a class="anchor" href="#noteworthy-characteristics"></a><a class="link" href="#noteworthy-characteristics">Noteworthy characteristics</a></h5>
+<h5 id="noteworthy-characteristics"><a class="anchor" href="#noteworthy-characteristics"></a>Noteworthy characteristics</h5>
 <div class="paragraph">
 <p>Collections are meant for storing/denormalizing relatively small amount
 of data. They work well for things like <code>the phone numbers of a given
@@ -4855,7 +4894,7 @@ denormalizing small amount of data is meant to stay.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="map"><a class="anchor" href="#map"></a><a class="link" href="#map">Maps</a></h5>
+<h5 id="map"><a class="anchor" href="#map"></a>Maps</h5>
 <div class="paragraph">
 <p>A <code>map</code> is a <a href="#types">typed</a> set of key-value pairs, where keys are
 unique. Furthermore, note that the map are internally sorted by their
@@ -4917,7 +4956,7 @@ DELETE favs[`author'] FROM users WHERE id = `jsmith'</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="set"><a class="anchor" href="#set"></a><a class="link" href="#set">Sets</a></h5>
+<h5 id="set"><a class="anchor" href="#set"></a>Sets</h5>
 <div class="paragraph">
 <p>A <code>set</code> is a <a href="#types">typed</a> collection of unique values. Sets are
 ordered by their values. To create a column of type <code>set</code>, use the <code>set</code>
@@ -4959,7 +4998,7 @@ inserted/updated <em>values</em>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="list"><a class="anchor" href="#list"></a><a class="link" href="#list">Lists</a></h5>
+<h5 id="list"><a class="anchor" href="#list"></a>Lists</h5>
 <div class="paragraph">
 <p>A <code>list</code> is a <a href="#types">typed</a> collection of non-unique values where
 elements are ordered by there position in the list. To create a column
@@ -5034,14 +5073,14 @@ inserted/updated <em>values</em>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="functions"><a class="anchor" href="#functions"></a><a class="link" href="#functions">Functions</a></h3>
+<h3 id="functions"><a class="anchor" href="#functions"></a>Functions</h3>
 <div class="paragraph">
 <p>CQL3 distinguishes between built-in functions (so called `native
 functions') and <a href="#udfs">user-defined functions</a>. CQL3 includes
 several native functions, described below:</p>
 </div>
 <div class="sect3">
-<h4 id="castFun"><a class="anchor" href="#castFun"></a><a class="link" href="#castFun">Cast</a></h4>
+<h4 id="castFun"><a class="anchor" href="#castFun"></a>Cast</h4>
 <div class="paragraph">
 <p>The <code>cast</code> function can be used to converts one native datatype to
 another.</p>
@@ -5152,7 +5191,7 @@ SELECT avg(cast(count as double)) FROM myTable</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="tokenFun"><a class="anchor" href="#tokenFun"></a><a class="link" href="#tokenFun">Token</a></h4>
+<h4 id="tokenFun"><a class="anchor" href="#tokenFun"></a>Token</h4>
 <div class="paragraph">
 <p>The <code>token</code> function allows to compute the token for a given partition
 key. The exact signature of the token function depends on the table
@@ -5195,16 +5234,16 @@ type will be <code>bigint</code>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="uuidFun"><a class="anchor" href="#uuidFun"></a><a class="link" href="#uuidFun">Uuid</a></h4>
+<h4 id="uuidFun"><a class="anchor" href="#uuidFun"></a>Uuid</h4>
 <div class="paragraph">
 <p>The <code>uuid</code> function takes no parameters and generates a random type 4
 uuid suitable for use in INSERT or SET statements.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="timeuuidFun"><a class="anchor" href="#timeuuidFun"></a><a class="link" href="#timeuuidFun">Timeuuid functions</a></h4>
+<h4 id="timeuuidFun"><a class="anchor" href="#timeuuidFun"></a>Timeuuid functions</h4>
 <div class="sect4">
-<h5 id="now"><a class="anchor" href="#now"></a><a class="link" href="#now"><code>now</code></a></h5>
+<h5 id="now"><a class="anchor" href="#now"></a><code>now</code></h5>
 <div class="paragraph">
 <p>The <code>now</code> function takes no arguments and generates, on the coordinator
 node, a new unique timeuuid (at the time where the statement using it is
@@ -5221,7 +5260,7 @@ SELECT * FROM myTable WHERE t = now()</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="mintimeuuid-and-maxtimeuuid"><a class="anchor" href="#mintimeuuid-and-maxtimeuuid"></a><a class="link" href="#mintimeuuid-and-maxtimeuuid"><code>minTimeuuid</code> and <code>maxTimeuuid</code></a></h5>
+<h5 id="mintimeuuid-and-maxtimeuuid"><a class="anchor" href="#mintimeuuid-and-maxtimeuuid"></a><code>minTimeuuid</code> and <code>maxTimeuuid</code></h5>
 <div class="paragraph">
 <p>The <code>minTimeuuid</code> (resp. <code>maxTimeuuid</code>) function takes a <code>timestamp</code>
 value <code>t</code> (which can be <a href="#usingtimestamps">either a timestamp or a
@@ -5254,7 +5293,7 @@ the result of those methods is almost certainly <em>a bad idea</em>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="timeFun"><a class="anchor" href="#timeFun"></a><a class="link" href="#timeFun">Time conversion functions</a></h4>
+<h4 id="timeFun"><a class="anchor" href="#timeFun"></a>Time conversion functions</h4>
 <div class="paragraph">
 <p>A number of functions are provided to <code>`convert'' a `timeuuid</code>, a
 <code>timestamp</code> or a <code>date</code> into another <code>native</code> type.</p>
@@ -5330,7 +5369,7 @@ raw value</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="blobFun"><a class="anchor" href="#blobFun"></a><a class="link" href="#blobFun">Blob conversion functions</a></h4>
+<h4 id="blobFun"><a class="anchor" href="#blobFun"></a>Blob conversion functions</h4>
 <div class="paragraph">
 <p>A number of functions are provided to <code>`convert'' the native types into
 binary data (`blob</code>). For every <code>&lt;native-type&gt;</code> <code>type</code> supported by CQL3
@@ -5343,7 +5382,7 @@ is <code>0x0000000000000003</code> and <code>blobAsBigint(0x0000000000000003)</c
 </div>
 </div>
 <div class="sect2">
-<h3 id="aggregates"><a class="anchor" href="#aggregates"></a><a class="link" href="#aggregates">Aggregates</a></h3>
+<h3 id="aggregates"><a class="anchor" href="#aggregates"></a>Aggregates</h3>
 <div class="paragraph">
 <p>Aggregate functions work on a set of rows. They receive values for each
 row and returns one value for the whole set.<br>
@@ -5357,7 +5396,7 @@ aggregates') and <a href="#udas">user-defined aggregates</a>. CQL3 includes
 several native aggregates, described below:</p>
 </div>
 <div class="sect3">
-<h4 id="countFct"><a class="anchor" href="#countFct"></a><a class="link" href="#countFct">Count</a></h4>
+<h4 id="countFct"><a class="anchor" href="#countFct"></a>Count</h4>
 <div class="paragraph">
 <p>The <code>count</code> function can be used to count the rows returned by a query.
 Example:</p>
@@ -5377,7 +5416,7 @@ SELECT COUNT (scores) FROM plays;</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="maxMinFcts"><a class="anchor" href="#maxMinFcts"></a><a class="link" href="#maxMinFcts">Max and Min</a></h4>
+<h4 id="maxMinFcts"><a class="anchor" href="#maxMinFcts"></a>Max and Min</h4>
 <div class="paragraph">
 <p>The <code>max</code> and <code>min</code> functions can be used to compute the maximum and the
 minimum value returned by a query for a given column.</p>
@@ -5388,7 +5427,7 @@ SELECT MIN (players), MAX (players) FROM plays WHERE game = `quake';</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="sumFct"><a class="anchor" href="#sumFct"></a><a class="link" href="#sumFct">Sum</a></h4>
+<h4 id="sumFct"><a class="anchor" href="#sumFct"></a>Sum</h4>
 <div class="paragraph">
 <p>The <code>sum</code> function can be used to sum up all the values returned by a
 query for a given column.</p>
@@ -5399,7 +5438,7 @@ SELECT SUM (players) FROM plays;</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="avgFct"><a class="anchor" href="#avgFct"></a><a class="link" href="#avgFct">Avg</a></h4>
+<h4 id="avgFct"><a class="anchor" href="#avgFct"></a>Avg</h4>
 <div class="paragraph">
 <p>The <code>avg</code> function can be used to compute the average of all the values
 returned by a query for a given column.</p>
@@ -5411,7 +5450,7 @@ SELECT AVG (players) FROM plays;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="udfs"><a class="anchor" href="#udfs"></a><a class="link" href="#udfs">User-Defined Functions</a></h3>
+<h3 id="udfs"><a class="anchor" href="#udfs"></a>User-Defined Functions</h3>
 <div class="paragraph">
 <p>User-defined functions allow execution of user-provided code in
 Cassandra. By default, Cassandra supports defining functions in <em>Java</em>
@@ -5540,7 +5579,7 @@ import com.datastax.driver.core.UDTValue;</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="udas"><a class="anchor" href="#udas"></a><a class="link" href="#udas">User-Defined Aggregates</a></h3>
+<h3 id="udas"><a class="anchor" href="#udas"></a>User-Defined Aggregates</h3>
 <div class="paragraph">
 <p>User-defined aggregates allow creation of custom aggregate functions
 using <a href="#udfs">UDFs</a>. Common examples of aggregate functions are
@@ -5620,7 +5659,7 @@ p.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="json"><a class="anchor" href="#json"></a><a class="link" href="#json">JSON Support</a></h3>
+<h3 id="json"><a class="anchor" href="#json"></a>JSON Support</h3>
 <div class="paragraph">
 <p>Cassandra 2.2 introduces JSON support to <a href="#selectStmt"><code>SELECT</code></a> and
 <a href="#insertStmt"><code>INSERT</code></a> statements. This support does not
@@ -5629,7 +5668,7 @@ enforced), it simply provides a convenient way to work with JSON
 documents.</p>
 </div>
 <div class="sect3">
-<h4 id="selectJson"><a class="anchor" href="#selectJson"></a><a class="link" href="#selectJson">SELECT JSON</a></h4>
+<h4 id="selectJson"><a class="anchor" href="#selectJson"></a>SELECT JSON</h4>
 <div class="paragraph">
 <p>With <code>SELECT</code> statements, the new <code>JSON</code> keyword can be used to return
 each row as a single <code>JSON</code> encoded map. The remainder of the <code>SELECT</code>
@@ -5650,7 +5689,7 @@ of the result set values.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="insertJson"><a class="anchor" href="#insertJson"></a><a class="link" href="#insertJson">INSERT JSON</a></h4>
+<h4 id="insertJson"><a class="anchor" href="#insertJson"></a>INSERT JSON</h4>
 <div class="paragraph">
 <p>With <code>INSERT</code> statements, the new <code>JSON</code> keyword can be used to enable
 inserting a <code>JSON</code> encoded map as a single row. The format of the <code>JSON</code>
@@ -5669,7 +5708,7 @@ a <code>NULL</code> value (which will result in a tombstone being created).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="jsonEncoding"><a class="anchor" href="#jsonEncoding"></a><a class="link" href="#jsonEncoding">JSON Encoding of Cassandra Data Types</a></h4>
+<h4 id="jsonEncoding"><a class="anchor" href="#jsonEncoding"></a>JSON Encoding of Cassandra Data Types</h4>
 <div class="paragraph">
 <p>Where possible, Cassandra will represent and accept data types in their
 native <code>JSON</code> representation. Cassandra will also accept string
@@ -5863,7 +5902,7 @@ format</p></td>
 </table>
 </div>
 <div class="sect3">
-<h4 id="fromJson"><a class="anchor" href="#fromJson"></a><a class="link" href="#fromJson">The fromJson() Function</a></h4>
+<h4 id="fromJson"><a class="anchor" href="#fromJson"></a>The fromJson() Function</h4>
 <div class="paragraph">
 <p>The <code>fromJson()</code> function may be used similarly to <code>INSERT JSON</code>, but
 for a single column value. It may only be used in the <code>VALUES</code> clause of
@@ -5873,7 +5912,7 @@ selection clause of a <code>SELECT</code> statement.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="toJson"><a class="anchor" href="#toJson"></a><a class="link" href="#toJson">The toJson() Function</a></h4>
+<h4 id="toJson"><a class="anchor" href="#toJson"></a>The toJson() Function</h4>
 <div class="paragraph">
 <p>The <code>toJson()</code> function may be used similarly to <code>SELECT JSON</code>, but for
 a single column value. It may only be used in the selection clause of a
@@ -5882,7 +5921,7 @@ a single column value. It may only be used in the selection clause of a
 </div>
 </div>
 <div class="sect2">
-<h3 id="appendixA"><a class="anchor" href="#appendixA"></a><a class="link" href="#appendixA">Appendix A: CQL Keywords</a></h3>
+<h3 id="appendixA"><a class="anchor" href="#appendixA"></a>Appendix A: CQL Keywords</h3>
 <div class="paragraph">
 <p>CQL distinguishes between <em>reserved</em> and <em>non-reserved</em> keywords.
 Reserved keywords cannot be used as identifier, they are truly reserved
@@ -6454,7 +6493,7 @@ or not.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="appendixB"><a class="anchor" href="#appendixB"></a><a class="link" href="#appendixB">Appendix B: CQL Reserved Types</a></h3>
+<h3 id="appendixB"><a class="anchor" href="#appendixB"></a>Appendix B: CQL Reserved Types</h3>
 <div class="paragraph">
 <p>The following type names are not currently used by CQL, but are reserved
 for potential future use. User-defined types may not use reserved type
@@ -6495,12 +6534,12 @@ names as their name.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="changes"><a class="anchor" href="#changes"></a><a class="link" href="#changes">Changes</a></h3>
+<h3 id="changes"><a class="anchor" href="#changes"></a>Changes</h3>
 <div class="paragraph">
 <p>The following describes the changes in each version of CQL.</p>
 </div>
 <div class="sect3">
-<h4 id="3-4-3"><a class="anchor" href="#3-4-3"></a><a class="link" href="#3-4-3">3.4.3</a></h4>
+<h4 id="3-4-3"><a class="anchor" href="#3-4-3"></a>3.4.3</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6511,7 +6550,7 @@ names as their name.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-4-2"><a class="anchor" href="#3-4-2"></a><a class="link" href="#3-4-2">3.4.2</a></h4>
+<h4 id="3-4-2"><a class="anchor" href="#3-4-2"></a>3.4.2</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6522,7 +6561,7 @@ names as their name.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-4-2-2"><a class="anchor" href="#3-4-2-2"></a><a class="link" href="#3-4-2-2">3.4.2</a></h4>
+<h4 id="3-4-2-2"><a class="anchor" href="#3-4-2-2"></a>3.4.2</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6554,7 +6593,7 @@ statements</a>, respectively.
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-4-1"><a class="anchor" href="#3-4-1"></a><a class="link" href="#3-4-1">3.4.1</a></h4>
+<h4 id="3-4-1"><a class="anchor" href="#3-4-1"></a>3.4.1</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6564,7 +6603,7 @@ statements</a>, respectively.
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-4-0"><a class="anchor" href="#3-4-0"></a><a class="link" href="#3-4-0">3.4.0</a></h4>
+<h4 id="3-4-0"><a class="anchor" href="#3-4-0"></a>3.4.0</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6582,7 +6621,7 @@ primary key columns</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-3-1"><a class="anchor" href="#3-3-1"></a><a class="link" href="#3-3-1">3.3.1</a></h4>
+<h4 id="3-3-1"><a class="anchor" href="#3-3-1"></a>3.3.1</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6593,7 +6632,7 @@ primary key columns</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-3-0"><a class="anchor" href="#3-3-0"></a><a class="link" href="#3-3-0">3.3.0</a></h4>
+<h4 id="3-3-0"><a class="anchor" href="#3-3-0"></a>3.3.0</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6635,7 +6674,7 @@ been added</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-2-0"><a class="anchor" href="#3-2-0"></a><a class="link" href="#3-2-0">3.2.0</a></h4>
+<h4 id="3-2-0"><a class="anchor" href="#3-2-0"></a>3.2.0</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6664,7 +6703,7 @@ keyspace</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-7"><a class="anchor" href="#3-1-7"></a><a class="link" href="#3-1-7">3.1.7</a></h4>
+<h4 id="3-1-7"><a class="anchor" href="#3-1-7"></a>3.1.7</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6680,7 +6719,7 @@ See <a href="#selectWhere">SELECT WHERE</a> clauses.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-6"><a class="anchor" href="#3-1-6"></a><a class="link" href="#3-1-6">3.1.6</a></h4>
+<h4 id="3-1-6"><a class="anchor" href="#3-1-6"></a>3.1.6</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6693,7 +6732,7 @@ See <a href="#selectWhere">SELECT WHERE</a> clauses.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-5"><a class="anchor" href="#3-1-5"></a><a class="link" href="#3-1-5">3.1.5</a></h4>
+<h4 id="3-1-5"><a class="anchor" href="#3-1-5"></a>3.1.5</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6708,7 +6747,7 @@ in CREATE TABLE</a>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-4"><a class="anchor" href="#3-1-4"></a><a class="link" href="#3-1-4">3.1.4</a></h4>
+<h4 id="3-1-4"><a class="anchor" href="#3-1-4"></a>3.1.4</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6719,7 +6758,7 @@ indexes (see <a href="#createIndexStmt">CREATE INDEX reference</a> ).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-3"><a class="anchor" href="#3-1-3"></a><a class="link" href="#3-1-3">3.1.3</a></h4>
+<h4 id="3-1-3"><a class="anchor" href="#3-1-3"></a>3.1.3</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6730,7 +6769,7 @@ indexes (see <a href="#createIndexStmt">CREATE INDEX reference</a> ).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-2"><a class="anchor" href="#3-1-2"></a><a class="link" href="#3-1-2">3.1.2</a></h4>
+<h4 id="3-1-2"><a class="anchor" href="#3-1-2"></a>3.1.2</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6743,7 +6782,7 @@ quote them (see <a href="#identifiers">quote identifiers</a> ).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-1"><a class="anchor" href="#3-1-1"></a><a class="link" href="#3-1-1">3.1.1</a></h4>
+<h4 id="3-1-1"><a class="anchor" href="#3-1-1"></a>3.1.1</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6764,7 +6803,7 @@ of <code>?</code>).</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-1-0"><a class="anchor" href="#3-1-0"></a><a class="link" href="#3-1-0">3.1.0</a></h4>
+<h4 id="3-1-0"><a class="anchor" href="#3-1-0"></a>3.1.0</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6794,7 +6833,7 @@ and <code>UPDATE</code> supports <code>IF</code> conditions.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-0-5"><a class="anchor" href="#3-0-5"></a><a class="link" href="#3-0-5">3.0.5</a></h4>
+<h4 id="3-0-5"><a class="anchor" href="#3-0-5"></a>3.0.5</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6806,7 +6845,7 @@ relations (see
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-0-4"><a class="anchor" href="#3-0-4"></a><a class="link" href="#3-0-4">3.0.4</a></h4>
+<h4 id="3-0-4"><a class="anchor" href="#3-0-4"></a>3.0.4</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6824,7 +6863,7 @@ should always be used for range queries on the partition key (see
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-0-3"><a class="anchor" href="#3-0-3"></a><a class="link" href="#3-0-3">3.0.3</a></h4>
+<h4 id="3-0-3"><a class="anchor" href="#3-0-3"></a>3.0.3</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6835,7 +6874,7 @@ added.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-0-2"><a class="anchor" href="#3-0-2"></a><a class="link" href="#3-0-2">3.0.2</a></h4>
+<h4 id="3-0-2"><a class="anchor" href="#3-0-2"></a>3.0.2</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6866,7 +6905,7 @@ clauses. See the <a href="#functions">section on functions</a> for details.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="3-0-1"><a class="anchor" href="#3-0-1"></a><a class="link" href="#3-0-1">3.0.1</a></h4>
+<h4 id="3-0-1"><a class="anchor" href="#3-0-1"></a>3.0.1</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -6888,7 +6927,7 @@ other words, `4.2E10</code> is now a valid floating point value.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="versioning"><a class="anchor" href="#versioning"></a><a class="link" href="#versioning">Versioning</a></h3>
+<h3 id="versioning"><a class="anchor" href="#versioning"></a>Versioning</h3>
 <div class="paragraph">
 <p>Versioning of the CQL language adheres to the <a href="http://semver.org">Semantic
 Versioning</a> guidelines. Versions take the form X.Y.Z where X, Y, and Z
@@ -6934,11 +6973,11 @@ compatible, functionality is introduced.</p></td>
             <footer class="grad grad--two flex-center pb-xlarge">
     <div class="inner text-center z2 relative">
         <h2 class="white py-small">Get started with Cassandra, fast.</h2>
-        <a href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
+        <a id="footer-cta" href="https://cassandra.apache.org/_/quickstart.html" class="btn btn--filled ma-medium">Quickstart Guide</a>
     </div>
     <div class="inner flex flex-distribute-items mt-xlarge z2 relative">
         <div class="col-2">
-            <div class="logo mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
+            <div id="footer-logo" class="logo logo--footer mb-medium"><img src="../../../../assets/img/logo-white.svg" alt=""></div>
             <p>Apache Cassandra powers mission-critical deployments with improved performance and unparalleled levels of scale in the cloud.</p>
         </div>
         <div class="col-2 flex flex-center">
@@ -6966,16 +7005,20 @@ compatible, functionality is introduced.</p></td>
         <div class="pr-medium"><a href="https://www.apache.org/security" target="_blank">Security</a></div>
         <div class="pr-medium"><a href="https://www.apache.org/foundation/sponsorship" target="_blank">Sponsorship</a></div>
     </div>
-    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script>2021 <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
-</div><script src="../../../../assets/js/site.js"></script>
-<script async src="../../../../assets/js/vendor/highlight.js"></script>
-<script src="../../../../assets/js/vendor/lunr.js"></script>
-<script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/3.11/cassandra/cql/cql_singlefile.html"></script>
-<script async src="../../../../assets/../search-index.js"></script>
+    <p class="my-medium">© <script>document.write(new Date().getFullYear())</script> <a href="https://apache.org" target="_blank">The Apache Software Foundation</a> under the terms of the Apache License 2.0. Apache, the Apache feather logo, and Apache Cassandra are trademarks of The Apache Software Foundation.</p>
+</div>
+<div id="fade" class="hidden"></div>
+<div id="modal" class="hidden">
+  <div id="close-modal" class="cursor-pointer"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+  <div id="mod-content" class="vid-mod-content resp-container"></div>
+</div>    <script src="../../../../assets/js/site.js"></script>
+    <script async src="../../../../assets/js/vendor/highlight.js"></script>
+    <script src="../../../../assets/js/vendor/lunr.js"></script>
+    <script src="../../../../assets/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/Cassandra/4.0/cassandra/cql/cql_singlefile.html"></script>
+    <script async src="../../../../assets/../search-index.js"></script>
 <script>
 jQuery(function(){
     var windowW = $(window).width();
-
     $(document)
     .on('click','.mobile-nav-icon',function(){
         $('.main-nav').fadeIn();
@@ -6993,6 +7036,13 @@ jQuery(function(){
       $(this).toggleClass('active');
       $('.docs-nav').toggleClass('active');
     });
+    var url = window.location.pathname;
+    var isQuickstart = url.includes('quickstart.html');
+    if(isQuickstart){
+      var footerCTA = document.getElementById('footer-cta');
+      footerCTA.innerHTML = 'Get latest updates';
+      footerCTA.setAttribute('href', '/_/blog.html');
+    }
 });
 </script>        </div>
     </body>
